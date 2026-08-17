@@ -36,8 +36,8 @@ jobs:
         env:
           ALIBABA_CLOUD_ACCESS_KEY_ID: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_ID }}
           ALIBABA_CLOUD_ACCESS_KEY_SECRET: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET }}
-          OSS_REGION: ${{ secrets.OSS_REGION }}
-          OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
+          OSS_REGION: oss-cn-hongkong
+          OSS_BUCKET: hwalai
           OSS_SECURE: "true"
         run: npm run check:oss
 
@@ -45,8 +45,8 @@ jobs:
         env:
           ALIBABA_CLOUD_ACCESS_KEY_ID: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_ID }}
           ALIBABA_CLOUD_ACCESS_KEY_SECRET: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET }}
-          OSS_REGION: ${{ secrets.OSS_REGION }}
-          OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
+          OSS_REGION: oss-cn-hongkong
+          OSS_BUCKET: hwalai
           OSS_SECURE: "true"
           PUBLISH_MANIFEST: data/core-site-manifest.json
         run: npm run publish

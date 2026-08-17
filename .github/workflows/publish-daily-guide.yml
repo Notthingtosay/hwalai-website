@@ -42,6 +42,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL || 'https://api.openai.com/v1' }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.6-terra' }}
+          AI_CLIENT: codex
         run: node scripts/run.mjs --count "${{ inputs.count || '1' }}"
 
       - name: Validate all guide pages

@@ -10,6 +10,7 @@
     "publish": "node scripts/publish.mjs"
   },
   "dependencies": {
+    "@openai/codex": "0.147.0",
     "ali-oss": "6.23.0"
   }
 }

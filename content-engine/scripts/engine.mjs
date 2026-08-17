@@ -1,5 +1,7 @@
 import fs from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
+import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -137,6 +139,106 @@ export async function generateWithOpenAI({ topic, photos, config, knowledge }) {
     note: "Image captions must describe the visible engineering subject without claiming a specific client or site."
   });
 
+  const apiBaseUrl = (process.env.OPENAI_BASE_URL || "https://api.openai.com/v1")
+    .replace(/\/+$/, "");
+  const aiClient = process.env.AI_CLIENT
+    || (apiBaseUrl === "https://api.openai.com/v1" ? "responses" : "codex");
+  let article;
+  if (aiClient === "codex") {
+    article = await generateWithCodexCli({ system, user, config, apiBaseUrl });
+  } else if (aiClient === "responses") {
+    article = await generateWithResponsesApi({ system, user, config, apiBaseUrl });
+  } else {
+    throw new Error(`不支持的 AI_CLIENT：${aiClient}`);
+  }
+  for (const copy of Object.values(article)) {
+    copy.metaDescription = truncateMetadata(copy.metaDescription, config.maximumDescriptionCharacters);
+  }
+  return article;
+}
+
+async function generateWithCodexCli({ system, user, config, apiBaseUrl }) {
+  const temporaryHome = await fs.mkdtemp(path.join(os.tmpdir(), "hwalai-codex-"));
+  const schemaFile = path.join(temporaryHome, "article-schema.json");
+  const outputFile = path.join(temporaryHome, "article.json");
+  const model = process.env.OPENAI_MODEL || config.model;
+  const codexExecutable = process.env.CODEX_BIN
+    || path.join(engineRoot, "node_modules", ".bin", process.platform === "win32" ? "codex.cmd" : "codex");
+  const prompt = [
+    system,
+    "Do not inspect files, run shell commands or call tools. Produce the final JSON immediately.",
+    `Article brief: ${user}`
+  ].join("\n\n");
+
+  try {
+    await fs.writeFile(
+      path.join(temporaryHome, "config.toml"),
+      [
+        "disable_response_storage = true",
+        `model = ${JSON.stringify(model)}`,
+        'model_provider = "packycode"',
+        'model_reasoning_effort = "high"',
+        "",
+        "[model_providers.packycode]",
+        'name = "packycode"',
+        `base_url = ${JSON.stringify(apiBaseUrl)}`,
+        'wire_api = "responses"',
+        "requires_openai_auth = true",
+        ""
+      ].join("\n"),
+      { mode: 0o600 }
+    );
+    await fs.writeFile(
+      path.join(temporaryHome, "auth.json"),
+      `${JSON.stringify({ OPENAI_API_KEY: process.env.OPENAI_API_KEY })}\n`,
+      { mode: 0o600 }
+    );
+    await fs.writeFile(schemaFile, `${JSON.stringify(articleSchema, null, 2)}\n`, { mode: 0o600 });
+
+    const result = await runProcess(codexExecutable, [
+      "exec",
+      "--ephemeral",
+      "--skip-git-repo-check",
+      "--sandbox", "read-only",
+      "--output-schema", schemaFile,
+      "--output-last-message", outputFile,
+      "--color", "never",
+      "-"
+    ], {
+      cwd: temporaryHome,
+      env: { ...process.env, CODEX_HOME: temporaryHome, NO_COLOR: "1" },
+      input: prompt
+    });
+    if (result.code !== 0) {
+      const safeError = `${result.stderr}\n${result.stdout}`
+        .replaceAll(process.env.OPENAI_API_KEY, "***")
+        .trim()
+        .slice(-5000);
+      throw new Error(`Codex CLI 生成失败（exit ${result.code}）：${safeError}`);
+    }
+    const outputText = (await fs.readFile(outputFile, "utf8")).trim();
+    if (!outputText) throw new Error("Codex CLI 没有返回文章正文。");
+    return JSON.parse(outputText);
+  } finally {
+    await fs.rm(temporaryHome, { recursive: true, force: true });
+  }
+}
+
+function runProcess(command, args, { cwd, env, input }) {
+  return new Promise((resolve, reject) => {
+    const child = spawn(command, args, { cwd, env, stdio: ["pipe", "pipe", "pipe"] });
+    let stdout = "";
+    let stderr = "";
+    child.stdout.on("data", (chunk) => { stdout += chunk; });
+    child.stderr.on("data", (chunk) => { stderr += chunk; });
+    child.on("error", reject);
+    child.on("close", (code) => resolve({ code, stdout, stderr }));
+    child.stdin.end(input);
+  });
+}
+
+async function generateWithResponsesApi({ system, user, config, apiBaseUrl }) {
+
   const requestBody = JSON.stringify({
     model: process.env.OPENAI_MODEL || config.model,
     input: [
@@ -152,8 +254,6 @@ export async function generateWithOpenAI({ topic, photos, config, knowledge }) {
       }
     }
   });
-  const apiBaseUrl = (process.env.OPENAI_BASE_URL || "https://api.openai.com/v1")
-    .replace(/\/+$/, "");
   let response;
   for (let attempt = 1; attempt <= 3; attempt += 1) {
     response = await fetch(`${apiBaseUrl}/responses`, {
@@ -182,11 +282,7 @@ export async function generateWithOpenAI({ topic, photos, config, knowledge }) {
     ?.flatMap((item) => item.content || [])
     .find((item) => item.type === "output_text")?.text;
   if (!outputText) throw new Error("AI API 没有返回文章正文。");
-  const article = JSON.parse(outputText);
-  for (const copy of Object.values(article)) {
-    copy.metaDescription = truncateMetadata(copy.metaDescription, config.maximumDescriptionCharacters);
-  }
-  return article;
+  return JSON.parse(outputText);
 }
 
 export function generateMockArticle(topic) {

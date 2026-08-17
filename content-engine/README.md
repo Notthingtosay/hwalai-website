@@ -29,6 +29,8 @@ OPENAI_BASE_URL=https://api.openai.com/v1 \
 npm run generate
 ```
 
+非 OpenAI 官方端點會預設透過官方 Codex CLI 連接，以符合 Codex 分組令牌的客戶端要求；官方 OpenAI 端點則預設直接使用 Responses API。可用 `AI_CLIENT=codex` 或 `AI_CLIENT=responses` 明確指定。
+
 要生成並直接上傳 OSS：
 
 ```bash

@@ -9,5 +9,16 @@
     "descriptionZh": "由入口用途、人流、門體到安全感應，逐步了解門機、玻璃與門框應該怎樣配置。",
     "descriptionEn": "Work through entrance use, footfall, door construction and safety sensors before choosing an operator or frame specification.",
     "heroImage": "/guide-assets/images/automatic-door-selection/framed-shopfront.webp"
+  },
+  {
+    "slug": "automatic-door-keeps-opening",
+    "publishedAt": "2026-08-17",
+    "categoryZh": "故障判斷",
+    "categoryEn": "Troubleshooting",
+    "titleZh": "自動門不停自動開關，可能是甚麼原因？",
+    "titleEn": "Why does an automatic door keep opening and closing?",
+    "descriptionZh": "自動門不停開關或關門後重開？了解感應器、門禁、路軌與門扇阻力的實用檢查方法，並知道何時應安排維修。",
+    "descriptionEn": "Practical checks for an automatic door that keeps opening or reopening, including sensors, access control, tracks and useful photos for diagnosis.",
+    "heroImage": "/guide-assets/images/automatic-door-selection/operator-and-rail.webp"
   }
 ]

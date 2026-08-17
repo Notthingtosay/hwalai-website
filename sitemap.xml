@@ -99,4 +99,18 @@
     <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-selection-guide/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-selection-guide/" />
   </url>
+  <url>
+    <loc>https://hwalai.com/zh-hk/guides/automatic-door-keeps-opening/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-keeps-opening/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/automatic-door-keeps-opening/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-keeps-opening/" />
+  </url>
+  <url>
+    <loc>https://hwalai.com/en-gb/guides/automatic-door-keeps-opening/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/automatic-door-keeps-opening/" />
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-keeps-opening/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-keeps-opening/" />
+  </url>
 </urlset>

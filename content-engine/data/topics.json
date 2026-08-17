@@ -1,32 +1,423 @@
 [
-  {"slug":"automatic-door-keeps-opening","titleZh":"自動門不停自動開關，可能是甚麼原因？","titleEn":"Why does an automatic door keep opening and closing?","intent":"troubleshooting","categoryZh":"故障判斷","categoryEn":"Troubleshooting","photoTags":["sensor","repair","operator"],"status":"queued"},
-  {"slug":"automatic-door-not-opening","titleZh":"自動門沒有反應？先檢查這六個位置","titleEn":"Automatic door not opening? Six checks to make first","intent":"troubleshooting","categoryZh":"故障判斷","categoryEn":"Troubleshooting","photoTags":["repair","operator","controls"],"status":"queued"},
-  {"slug":"automatic-door-closing-too-fast","titleZh":"自動門關得太快怎麼辦？安全與調校重點","titleEn":"Automatic door closing too fast: safety and adjustment checks","intent":"troubleshooting","categoryZh":"故障判斷","categoryEn":"Troubleshooting","photoTags":["safety","sensor","operator"],"status":"queued"},
-  {"slug":"automatic-door-making-noise","titleZh":"自動門有異常聲音，哪些情況要盡快檢查？","titleEn":"Noisy automatic door: when should it be inspected?","intent":"troubleshooting","categoryZh":"故障判斷","categoryEn":"Troubleshooting","photoTags":["maintenance","rail","operator"],"status":"queued"},
-  {"slug":"automatic-door-sensor-troubleshooting","titleZh":"自動門感應器失靈？常見原因與現場檢查方法","titleEn":"Automatic door sensor problems: common causes and site checks","intent":"troubleshooting","categoryZh":"感應與安全","categoryEn":"Sensors & safety","photoTags":["sensor","safety","controls"],"status":"queued"},
-  {"slug":"automatic-door-power-failure","titleZh":"停電時自動門應該怎樣運作？","titleEn":"How should an automatic door operate during a power failure?","intent":"education","categoryZh":"電源與門禁","categoryEn":"Power & access","photoTags":["access-control","operator","safety"],"status":"queued"},
-  {"slug":"automatic-door-backup-battery","titleZh":"自動門需要後備電源嗎？選擇前要知道的事","titleEn":"Does an automatic door need backup power?","intent":"selection","categoryZh":"電源與門禁","categoryEn":"Power & access","photoTags":["operator","controls","safety"],"status":"queued"},
-  {"slug":"automatic-door-access-control","titleZh":"自動門怎樣連接拍卡、密碼及手機門禁？","titleEn":"Connecting an automatic door to card, keypad or mobile access","intent":"selection","categoryZh":"電源與門禁","categoryEn":"Power & access","photoTags":["access-control","controls","entrance"],"status":"queued"},
-  {"slug":"automatic-door-safety-sensors","titleZh":"自動門防夾感應器與開門感應器有甚麼分別？","titleEn":"Activation and anti-trap sensors: what is the difference?","intent":"education","categoryZh":"感應與安全","categoryEn":"Sensors & safety","photoTags":["sensor","safety","entrance"],"status":"queued"},
-  {"slug":"automatic-door-for-elderly-users","titleZh":"長者及無障礙入口的自動門要留意甚麼？","titleEn":"Automatic doors for older and mobility-impaired users","intent":"selection","categoryZh":"場景選擇","categoryEn":"Use cases","photoTags":["safety","residential","entrance"],"status":"queued"},
-  {"slug":"automatic-door-for-clinics","titleZh":"診所自動門怎樣兼顧衞生、私隱與安全？","titleEn":"Choosing an automatic door for a clinic","intent":"selection","categoryZh":"場景選擇","categoryEn":"Use cases","photoTags":["frosted-glass","privacy","safety"],"status":"queued"},
-  {"slug":"automatic-door-for-restaurants","titleZh":"餐廳入口自動門怎樣選？人流、冷氣與氣味控制","titleEn":"Choosing an automatic door for a restaurant entrance","intent":"selection","categoryZh":"場景選擇","categoryEn":"Use cases","photoTags":["shopfront","entrance","framed-door"],"status":"queued"},
-  {"slug":"automatic-door-for-offices","titleZh":"辦公室自動門如何配合門禁與訪客動線？","titleEn":"Planning an office automatic door with access control","intent":"selection","categoryZh":"場景選擇","categoryEn":"Use cases","photoTags":["office","access-control","frosted-glass"],"status":"queued"},
-  {"slug":"automatic-door-for-retail","titleZh":"零售商舖自動門：展示效果與實際使用如何平衡？","titleEn":"Automatic doors for retail: balancing appearance and daily use","intent":"selection","categoryZh":"場景選擇","categoryEn":"Use cases","photoTags":["shopfront","glass","entrance"],"status":"queued"},
-  {"slug":"sliding-vs-swing-automatic-door","titleZh":"平移自動門還是平開自動門？五個判斷重點","titleEn":"Sliding or swing automatic door? Five decision points","intent":"comparison","categoryZh":"選購與安裝","categoryEn":"Selection & installation","photoTags":["entrance","selection","glass"],"status":"queued"},
-  {"slug":"telescopic-automatic-door-guide","titleZh":"門洞不夠闊，可以考慮重疊式自動門嗎？","titleEn":"Can a telescopic automatic door solve a narrow opening?","intent":"selection","categoryZh":"選購與安裝","categoryEn":"Selection & installation","photoTags":["entrance","glass","selection"],"status":"queued"},
-  {"slug":"retrofit-existing-glass-door","titleZh":"現有玻璃門可以改裝成自動門嗎？","titleEn":"Can an existing glass door be converted to automatic operation?","intent":"selection","categoryZh":"選購與安裝","categoryEn":"Selection & installation","photoTags":["glass","installation","operator"],"status":"queued"},
-  {"slug":"automatic-door-site-survey","titleZh":"安裝自動門前，現場勘察會檢查甚麼？","titleEn":"What is checked during an automatic door site survey?","intent":"education","categoryZh":"選購與安裝","categoryEn":"Selection & installation","photoTags":["installation","entrance","operator"],"status":"queued"},
-  {"slug":"automatic-door-power-requirements","titleZh":"自動門安裝要預留甚麼電源和走線？","titleEn":"Power and cabling requirements for an automatic door","intent":"education","categoryZh":"選購與安裝","categoryEn":"Selection & installation","photoTags":["controls","installation","operator"],"status":"queued"},
-  {"slug":"frameless-vs-framed-glass-door","titleZh":"無框與有框玻璃自動門，應該怎樣選？","titleEn":"Frameless or framed glass automatic door?","intent":"comparison","categoryZh":"玻璃與門框","categoryEn":"Glass & frames","photoTags":["glass","framed-door","frosted-glass"],"status":"queued"},
-  {"slug":"automatic-door-glass-selection","titleZh":"自動門玻璃不是愈厚愈好：選擇時要看甚麼？","titleEn":"Automatic door glass: why thickness is not the only factor","intent":"education","categoryZh":"玻璃與門框","categoryEn":"Glass & frames","photoTags":["glass","safety","framed-door"],"status":"queued"},
-  {"slug":"stainless-steel-door-frame-guide","titleZh":"自動門不鏽鋼門框怎樣選？環境與收口重點","titleEn":"Choosing stainless-steel framing for an automatic door","intent":"selection","categoryZh":"玻璃與門框","categoryEn":"Glass & frames","photoTags":["framed-door","entrance","commercial"],"status":"queued"},
-  {"slug":"frosted-glass-automatic-door","titleZh":"磨砂玻璃自動門適合哪些場所？","titleEn":"Where does a frosted-glass automatic door work best?","intent":"selection","categoryZh":"玻璃與門框","categoryEn":"Glass & frames","photoTags":["frosted-glass","privacy","office"],"status":"queued"},
-  {"slug":"automatic-door-maintenance-checklist","titleZh":"自動門日常保養清單：每月可以自行檢查甚麼？","titleEn":"Monthly automatic door maintenance checklist","intent":"maintenance","categoryZh":"保養與維護","categoryEn":"Maintenance","photoTags":["maintenance","operator","rail"],"status":"queued"},
-  {"slug":"automatic-door-service-warning-signs","titleZh":"自動門需要保養的七個早期訊號","titleEn":"Seven early signs an automatic door needs attention","intent":"maintenance","categoryZh":"保養與維護","categoryEn":"Maintenance","photoTags":["maintenance","repair","operator"],"status":"queued"},
-  {"slug":"automatic-door-rain-wind","titleZh":"大風大雨會影響自動門嗎？香港入口設計重點","titleEn":"How wind and rain affect automatic doors in Hong Kong","intent":"education","categoryZh":"環境與耐用","categoryEn":"Environment & durability","photoTags":["entrance","framed-door","commercial"],"status":"queued"},
-  {"slug":"coastal-automatic-door-materials","titleZh":"沿海及潮濕位置的自動門，材料怎樣選？","titleEn":"Automatic door materials for coastal and humid locations","intent":"selection","categoryZh":"環境與耐用","categoryEn":"Environment & durability","photoTags":["framed-door","glass","maintenance"],"status":"queued"},
-  {"slug":"automatic-door-after-renovation","titleZh":"裝修後自動門不順暢？可能被忽略的現場因素","titleEn":"Automatic door problems after renovation: site factors to check","intent":"troubleshooting","categoryZh":"故障判斷","categoryEn":"Troubleshooting","photoTags":["installation","repair","rail"],"status":"queued"},
-  {"slug":"automatic-door-enquiry-photos","titleZh":"查詢自動門工程時，應該拍哪些相片？","titleEn":"Which photos should you send for an automatic door enquiry?","intent":"lead-generation","categoryZh":"查詢準備","categoryEn":"Preparing an enquiry","photoTags":["entrance","operator","installation"],"status":"queued"},
-  {"slug":"automatic-door-repair-video-guide","titleZh":"拍一段甚麼樣的短片，最有助判斷自動門故障？","titleEn":"How to film an automatic door fault for remote assessment","intent":"lead-generation","categoryZh":"查詢準備","categoryEn":"Preparing an enquiry","photoTags":["repair","operator","sensor"],"status":"queued"}
+  {
+    "slug": "automatic-door-keeps-opening",
+    "titleZh": "自動門不停自動開關，可能是甚麼原因？",
+    "titleEn": "Why does an automatic door keep opening and closing?",
+    "intent": "troubleshooting",
+    "categoryZh": "故障判斷",
+    "categoryEn": "Troubleshooting",
+    "photoTags": [
+      "sensor",
+      "repair",
+      "operator"
+    ],
+    "status": "published",
+    "publishedAt": "2026-08-17"
+  },
+  {
+    "slug": "automatic-door-not-opening",
+    "titleZh": "自動門沒有反應？先檢查這六個位置",
+    "titleEn": "Automatic door not opening? Six checks to make first",
+    "intent": "troubleshooting",
+    "categoryZh": "故障判斷",
+    "categoryEn": "Troubleshooting",
+    "photoTags": [
+      "repair",
+      "operator",
+      "controls"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-closing-too-fast",
+    "titleZh": "自動門關得太快怎麼辦？安全與調校重點",
+    "titleEn": "Automatic door closing too fast: safety and adjustment checks",
+    "intent": "troubleshooting",
+    "categoryZh": "故障判斷",
+    "categoryEn": "Troubleshooting",
+    "photoTags": [
+      "safety",
+      "sensor",
+      "operator"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-making-noise",
+    "titleZh": "自動門有異常聲音，哪些情況要盡快檢查？",
+    "titleEn": "Noisy automatic door: when should it be inspected?",
+    "intent": "troubleshooting",
+    "categoryZh": "故障判斷",
+    "categoryEn": "Troubleshooting",
+    "photoTags": [
+      "maintenance",
+      "rail",
+      "operator"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-sensor-troubleshooting",
+    "titleZh": "自動門感應器失靈？常見原因與現場檢查方法",
+    "titleEn": "Automatic door sensor problems: common causes and site checks",
+    "intent": "troubleshooting",
+    "categoryZh": "感應與安全",
+    "categoryEn": "Sensors & safety",
+    "photoTags": [
+      "sensor",
+      "safety",
+      "controls"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-power-failure",
+    "titleZh": "停電時自動門應該怎樣運作？",
+    "titleEn": "How should an automatic door operate during a power failure?",
+    "intent": "education",
+    "categoryZh": "電源與門禁",
+    "categoryEn": "Power & access",
+    "photoTags": [
+      "access-control",
+      "operator",
+      "safety"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-backup-battery",
+    "titleZh": "自動門需要後備電源嗎？選擇前要知道的事",
+    "titleEn": "Does an automatic door need backup power?",
+    "intent": "selection",
+    "categoryZh": "電源與門禁",
+    "categoryEn": "Power & access",
+    "photoTags": [
+      "operator",
+      "controls",
+      "safety"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-access-control",
+    "titleZh": "自動門怎樣連接拍卡、密碼及手機門禁？",
+    "titleEn": "Connecting an automatic door to card, keypad or mobile access",
+    "intent": "selection",
+    "categoryZh": "電源與門禁",
+    "categoryEn": "Power & access",
+    "photoTags": [
+      "access-control",
+      "controls",
+      "entrance"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-safety-sensors",
+    "titleZh": "自動門防夾感應器與開門感應器有甚麼分別？",
+    "titleEn": "Activation and anti-trap sensors: what is the difference?",
+    "intent": "education",
+    "categoryZh": "感應與安全",
+    "categoryEn": "Sensors & safety",
+    "photoTags": [
+      "sensor",
+      "safety",
+      "entrance"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-for-elderly-users",
+    "titleZh": "長者及無障礙入口的自動門要留意甚麼？",
+    "titleEn": "Automatic doors for older and mobility-impaired users",
+    "intent": "selection",
+    "categoryZh": "場景選擇",
+    "categoryEn": "Use cases",
+    "photoTags": [
+      "safety",
+      "residential",
+      "entrance"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-for-clinics",
+    "titleZh": "診所自動門怎樣兼顧衞生、私隱與安全？",
+    "titleEn": "Choosing an automatic door for a clinic",
+    "intent": "selection",
+    "categoryZh": "場景選擇",
+    "categoryEn": "Use cases",
+    "photoTags": [
+      "frosted-glass",
+      "privacy",
+      "safety"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-for-restaurants",
+    "titleZh": "餐廳入口自動門怎樣選？人流、冷氣與氣味控制",
+    "titleEn": "Choosing an automatic door for a restaurant entrance",
+    "intent": "selection",
+    "categoryZh": "場景選擇",
+    "categoryEn": "Use cases",
+    "photoTags": [
+      "shopfront",
+      "entrance",
+      "framed-door"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-for-offices",
+    "titleZh": "辦公室自動門如何配合門禁與訪客動線？",
+    "titleEn": "Planning an office automatic door with access control",
+    "intent": "selection",
+    "categoryZh": "場景選擇",
+    "categoryEn": "Use cases",
+    "photoTags": [
+      "office",
+      "access-control",
+      "frosted-glass"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-for-retail",
+    "titleZh": "零售商舖自動門：展示效果與實際使用如何平衡？",
+    "titleEn": "Automatic doors for retail: balancing appearance and daily use",
+    "intent": "selection",
+    "categoryZh": "場景選擇",
+    "categoryEn": "Use cases",
+    "photoTags": [
+      "shopfront",
+      "glass",
+      "entrance"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "sliding-vs-swing-automatic-door",
+    "titleZh": "平移自動門還是平開自動門？五個判斷重點",
+    "titleEn": "Sliding or swing automatic door? Five decision points",
+    "intent": "comparison",
+    "categoryZh": "選購與安裝",
+    "categoryEn": "Selection & installation",
+    "photoTags": [
+      "entrance",
+      "selection",
+      "glass"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "telescopic-automatic-door-guide",
+    "titleZh": "門洞不夠闊，可以考慮重疊式自動門嗎？",
+    "titleEn": "Can a telescopic automatic door solve a narrow opening?",
+    "intent": "selection",
+    "categoryZh": "選購與安裝",
+    "categoryEn": "Selection & installation",
+    "photoTags": [
+      "entrance",
+      "glass",
+      "selection"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "retrofit-existing-glass-door",
+    "titleZh": "現有玻璃門可以改裝成自動門嗎？",
+    "titleEn": "Can an existing glass door be converted to automatic operation?",
+    "intent": "selection",
+    "categoryZh": "選購與安裝",
+    "categoryEn": "Selection & installation",
+    "photoTags": [
+      "glass",
+      "installation",
+      "operator"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-site-survey",
+    "titleZh": "安裝自動門前，現場勘察會檢查甚麼？",
+    "titleEn": "What is checked during an automatic door site survey?",
+    "intent": "education",
+    "categoryZh": "選購與安裝",
+    "categoryEn": "Selection & installation",
+    "photoTags": [
+      "installation",
+      "entrance",
+      "operator"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-power-requirements",
+    "titleZh": "自動門安裝要預留甚麼電源和走線？",
+    "titleEn": "Power and cabling requirements for an automatic door",
+    "intent": "education",
+    "categoryZh": "選購與安裝",
+    "categoryEn": "Selection & installation",
+    "photoTags": [
+      "controls",
+      "installation",
+      "operator"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "frameless-vs-framed-glass-door",
+    "titleZh": "無框與有框玻璃自動門，應該怎樣選？",
+    "titleEn": "Frameless or framed glass automatic door?",
+    "intent": "comparison",
+    "categoryZh": "玻璃與門框",
+    "categoryEn": "Glass & frames",
+    "photoTags": [
+      "glass",
+      "framed-door",
+      "frosted-glass"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-glass-selection",
+    "titleZh": "自動門玻璃不是愈厚愈好：選擇時要看甚麼？",
+    "titleEn": "Automatic door glass: why thickness is not the only factor",
+    "intent": "education",
+    "categoryZh": "玻璃與門框",
+    "categoryEn": "Glass & frames",
+    "photoTags": [
+      "glass",
+      "safety",
+      "framed-door"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "stainless-steel-door-frame-guide",
+    "titleZh": "自動門不鏽鋼門框怎樣選？環境與收口重點",
+    "titleEn": "Choosing stainless-steel framing for an automatic door",
+    "intent": "selection",
+    "categoryZh": "玻璃與門框",
+    "categoryEn": "Glass & frames",
+    "photoTags": [
+      "framed-door",
+      "entrance",
+      "commercial"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "frosted-glass-automatic-door",
+    "titleZh": "磨砂玻璃自動門適合哪些場所？",
+    "titleEn": "Where does a frosted-glass automatic door work best?",
+    "intent": "selection",
+    "categoryZh": "玻璃與門框",
+    "categoryEn": "Glass & frames",
+    "photoTags": [
+      "frosted-glass",
+      "privacy",
+      "office"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-maintenance-checklist",
+    "titleZh": "自動門日常保養清單：每月可以自行檢查甚麼？",
+    "titleEn": "Monthly automatic door maintenance checklist",
+    "intent": "maintenance",
+    "categoryZh": "保養與維護",
+    "categoryEn": "Maintenance",
+    "photoTags": [
+      "maintenance",
+      "operator",
+      "rail"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-service-warning-signs",
+    "titleZh": "自動門需要保養的七個早期訊號",
+    "titleEn": "Seven early signs an automatic door needs attention",
+    "intent": "maintenance",
+    "categoryZh": "保養與維護",
+    "categoryEn": "Maintenance",
+    "photoTags": [
+      "maintenance",
+      "repair",
+      "operator"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-rain-wind",
+    "titleZh": "大風大雨會影響自動門嗎？香港入口設計重點",
+    "titleEn": "How wind and rain affect automatic doors in Hong Kong",
+    "intent": "education",
+    "categoryZh": "環境與耐用",
+    "categoryEn": "Environment & durability",
+    "photoTags": [
+      "entrance",
+      "framed-door",
+      "commercial"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "coastal-automatic-door-materials",
+    "titleZh": "沿海及潮濕位置的自動門，材料怎樣選？",
+    "titleEn": "Automatic door materials for coastal and humid locations",
+    "intent": "selection",
+    "categoryZh": "環境與耐用",
+    "categoryEn": "Environment & durability",
+    "photoTags": [
+      "framed-door",
+      "glass",
+      "maintenance"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-after-renovation",
+    "titleZh": "裝修後自動門不順暢？可能被忽略的現場因素",
+    "titleEn": "Automatic door problems after renovation: site factors to check",
+    "intent": "troubleshooting",
+    "categoryZh": "故障判斷",
+    "categoryEn": "Troubleshooting",
+    "photoTags": [
+      "installation",
+      "repair",
+      "rail"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-enquiry-photos",
+    "titleZh": "查詢自動門工程時，應該拍哪些相片？",
+    "titleEn": "Which photos should you send for an automatic door enquiry?",
+    "intent": "lead-generation",
+    "categoryZh": "查詢準備",
+    "categoryEn": "Preparing an enquiry",
+    "photoTags": [
+      "entrance",
+      "operator",
+      "installation"
+    ],
+    "status": "queued"
+  },
+  {
+    "slug": "automatic-door-repair-video-guide",
+    "titleZh": "拍一段甚麼樣的短片，最有助判斷自動門故障？",
+    "titleEn": "How to film an automatic door fault for remote assessment",
+    "intent": "lead-generation",
+    "categoryZh": "查詢準備",
+    "categoryEn": "Preparing an enquiry",
+    "photoTags": [
+      "repair",
+      "operator",
+      "sensor"
+    ],
+    "status": "queued"
+  }
 ]

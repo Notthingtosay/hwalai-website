@@ -568,7 +568,7 @@ export async function updateHub(locale, published, outputRoot = siteRoot) {
   if (!marker.test(html)) throw new Error(`${file} 缺少自动文章标记`);
   html = html.replace(marker, block);
   await fs.writeFile(file, html);
-  return path.relative(outputRoot, file);
+  return [path.relative(outputRoot, file)];
 }
 
 export async function updateSitemap(topic, date, outputRoot = siteRoot) {

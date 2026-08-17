@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-HK">
+  <head>
+    <script>!function(){var l=window.location,h=l.hostname;if((l.protocol==="http:"&&h!=="127.0.0.1"&&h!=="localhost")||h==="www.hwalai.com"){l.replace("https://hwalai.com"+l.pathname+l.search+l.hash)}}();</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>聯絡我們 | 華麗工程</title>
+    <meta name="description" content="透過 WhatsApp 聯絡華麗工程香港團隊，查詢自動門新裝、翻新、保養及維修安排。" />
+    <link rel="icon" type="image/png" href="/HL LOGO.png" />
+    <link rel="canonical" href="https://hwalai.com/zh-hk/contact/" />
+    <link rel="alternate" hreflang="zh-hk" href="https://hwalai.com/zh-hk/contact/" />
+    <link rel="alternate" hreflang="en-gb" href="https://hwalai.com/en-gb/contact/" />
+    <link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/contact/" />
+    <style>
+      :root { --hl-red:#b30f1a; --hl-red-dark:#8f0d16; --hl-red-soft:#f5e7e8; --hl-black:#121212; --hl-black-soft:#1d1d1d; --ink:#111; --paper:#fff; --line:#e5e7eb; --muted:#4b5563; }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { margin:0; color:var(--ink); background:var(--paper); font-family:Inter,-apple-system,BlinkMacSystemFont,"PingFang HK","Microsoft JhengHei",sans-serif; line-height:1.5; }
+      a { color:inherit; text-decoration:none; }
+      .shell { width:min(1280px,calc(100% - 32px)); margin:auto; }
+      .nav { position:fixed; top:0; left:0; width:100%; z-index:50; background:#fff; border-bottom:1px solid var(--line); padding:12px 0; }
+      .nav-inner { min-height:64px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+      .brand { display:flex; align-items:center; gap:16px; font-size:30px; font-weight:900; letter-spacing:-.04em; white-space:nowrap; }
+      .brand-mark { position:relative; width:64px; height:56px; margin-right:-20px; flex:0 0 auto; overflow:visible; }
+      .brand-mark img { position:absolute; left:0; top:50%; height:112px; width:auto; max-width:none; transform:translateY(-50%); }
+      .nav-links { display:flex; align-items:center; gap:32px; font-size:14px; letter-spacing:.025em; font-weight:700; }
+      .nav-links a { border-bottom:2px solid transparent; padding:8px 0; }
+      .nav-links a:hover,.nav-links a.active { color:var(--hl-red); border-color:var(--hl-red); }
+      .language-switch { display:flex; align-items:center; background:#f3f4f6; border-radius:999px; padding:4px; }
+      .language { display:inline-flex; width:3.2rem; min-height:29px; align-items:center; justify-content:center; border-radius:999px; color:#6b7280; font-size:12px; font-weight:700; }
+      .language.active { background:#fff; color:var(--hl-red); box-shadow:0 1px 3px rgba(0,0,0,.12); }
+      .hero { margin-top:88px; min-height:620px; color:#fff; background:#161616 url("https://hwalai.com/autodoor.jpg") center/cover no-repeat; }
+      .hero-shade { min-height:620px; display:flex; align-items:center; background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.63) 56%,rgba(0,0,0,.36)); padding:96px 0 76px; }
+      .hero-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:end; }
+      .eyebrow { margin:0 0 16px; color:#e7c1c4; font-size:13px; font-weight:800; letter-spacing:.14em; }
+      h1 { max-width:720px; margin:0; font-size:clamp(44px,5vw,72px); line-height:1.16; letter-spacing:-.04em; }
+      .hero p { max-width:610px; margin:22px 0 0; color:#fff; font-size:19px; font-weight:300; }
+      .direct { border:1px solid rgba(255,255,255,.22); border-radius:28px; background:rgba(255,255,255,.06); backdrop-filter:blur(10px); padding:28px; }
+      .direct small { display:block; margin-bottom:7px; color:#d7d7d7; font-weight:800; letter-spacing:.08em; }
+      .direct a { display:block; font-size:30px; font-weight:900; letter-spacing:.01em; }
+      .direct p { margin:10px 0 0; font-size:14px; color:#d7d7d7; }
+      main { padding:80px 0; }
+      .intro { display:flex; align-items:end; justify-content:space-between; gap:32px; margin-bottom:32px; }
+      h2 { margin:0; font-size:clamp(32px,3vw,48px); line-height:1.14; letter-spacing:-.04em; }
+      .intro p { max-width:420px; margin:0; color:var(--muted); }
+      .layout { display:grid; grid-template-columns:minmax(0,1.55fr) minmax(280px,.7fr); gap:34px; align-items:start; }
+      .form-wrap { background:#fff; border-radius:28px; box-shadow:0 20px 60px rgba(30,25,21,.08); padding:36px; }
+      .form-note { margin:0 0 30px; color:var(--muted); }
+      .field-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+      label { display:block; margin:0 0 8px; font-size:14px; font-weight:800; }
+      input,select,textarea { width:100%; border:1px solid #e8e3df; border-radius:16px; background:#fcfaf8; color:var(--ink); padding:14px 15px; font:inherit; }
+      input:focus,select:focus,textarea:focus { outline:2px solid rgba(179,15,26,.18); border-color:var(--hl-red); }
+      textarea { min-height:130px; resize:vertical; }
+      .full { grid-column:1 / -1; }
+      .service-options { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+      .service-options label { position:relative; margin:0; cursor:pointer; }
+      .service-options input { position:absolute; width:1px; height:1px; margin:0; padding:0; overflow:hidden; opacity:0; pointer-events:none; }
+      .service-options span { display:block; border:1px solid #e8ddd5; border-radius:18px; background:#fcfaf8; padding:14px; font-size:15px; font-weight:700; }
+      .service-options input:checked + span { border-color:var(--hl-red); background:var(--hl-red-soft); color:var(--hl-red); }
+      .service-options input:focus-visible + span { outline:3px solid rgba(179,15,26,.22); outline-offset:2px; }
+      .privacy { margin:22px 0; color:var(--muted); font-size:13px; }
+      .submit { display:flex; flex-wrap:wrap; align-items:center; gap:16px; }
+      button,.call { appearance:none; border:0; border-radius:999px; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; min-height:52px; padding:0 28px; font:inherit; font-size:14px; font-weight:800; letter-spacing:.12em; }
+      button { background:var(--hl-red); color:#fff; }
+      button:hover { background:var(--hl-red-dark); }
+      .call { border:1px solid var(--hl-red); color:var(--hl-red); }
+      .call:hover { background:var(--hl-red); color:#fff; }
+      .sidebar { display:grid; gap:18px; }
+      .panel { background:#fff; border-radius:28px; box-shadow:0 20px 60px rgba(30,25,21,.08); padding:27px; }
+      .panel h3 { margin:0 0 14px; font-size:21px; }
+      .panel p { margin:0; color:var(--muted); }
+      .panel ul { margin:18px 0 0; padding-left:19px; color:var(--muted); }
+      .panel li + li { margin-top:9px; }
+      .pre { background:var(--hl-black); color:#fff; }
+      .pre p,.pre li { color:#e0e0e0; }
+      .pre strong { color:#fff; }
+      .departments { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; margin-top:34px; }
+      .department { background:#fff; border-radius:28px; box-shadow:0 20px 60px rgba(30,25,21,.08); padding:30px; }
+      .department h3 { margin:0 0 20px; font-size:24px; }
+      .department dl { display:grid; grid-template-columns:130px 1fr; gap:11px 18px; margin:0; }
+      .department dt { color:var(--muted); font-weight:800; }
+      .department dd { margin:0; font-weight:600; }
+      .footer { background:#faf8f8; color:var(--ink); border-top:1px solid #ead7d8; padding:72px 0 0; }
+      .footer-grid { display:grid; grid-template-columns:1.2fr .8fr; gap:52px; padding-bottom:52px; }
+      .footer .brand { font-size:26px; }
+      .footer .brand-mark img { height:90px; }
+      .footer p { margin:14px 0 0; color:var(--muted); max-width:420px; }
+      .footer a { font-weight:800; }
+      .footer-links { display:grid; grid-template-columns:repeat(2,1fr); gap:28px; font-size:14px; }
+      .footer-links small { display:block; margin-bottom:15px; color:#9ca3af; font-size:11px; font-weight:800; letter-spacing:.18em; }
+      .footer-links a { display:block; margin-top:10px; color:#4b5563; font-weight:600; }
+      .footer-links a:hover { color:var(--hl-red); }
+      .footer-bottom { border-top:1px solid #ead7d8; padding:18px 0; color:#6b7280; font-size:12px; }
+      .footer-tags { background:var(--hl-black); padding:24px 0; }
+      .footer-tags .shell { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:12px; }
+      .footer-tags span { border:1px solid rgba(255,255,255,.2); border-radius:999px; padding:8px 15px; color:rgba(255,255,255,.8); font-size:11px; font-weight:800; letter-spacing:.14em; }
+      @media (max-width:860px) { .nav-links { display:none; } .hero-grid,.layout,.departments { grid-template-columns:1fr; } .hero-shade { min-height:570px; padding:120px 0 58px; } .intro { display:block; } .intro p { margin-top:16px; } .field-grid { grid-template-columns:1fr; } .full { grid-column:auto; } .service-options { grid-template-columns:1fr; } .footer-grid { grid-template-columns:1fr; gap:34px; } }
+      @media (max-width:520px) { .shell { width:min(100% - 28px,1280px); } .nav-inner { min-height:58px; } .brand { font-size:22px; } .brand-mark { transform:scale(.78); transform-origin:left center; margin-right:-32px; } .language { width:2.7rem; } .hero { margin-top:82px; min-height:560px; } .hero-shade { min-height:560px; } .form-wrap,.panel,.department { padding:23px; border-radius:23px; } .submit>* { width:100%; } .footer-links { grid-template-columns:1fr; } .footer-tags .shell { justify-content:center; } }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="shell nav-inner">
+        <a class="brand" href="/zh-hk/"><span class="brand-mark"><img src="https://hwalai.com/HL%20LOGO.png" alt="華麗工程" /></span><span>華麗工程</span></a>
+        <nav class="nav-links" aria-label="主選單">
+          <a href="/zh-hk/portfolio/">產品與服務</a>
+          <a href="/zh-hk/about/">公司簡介</a>
+          <a href="/zh-hk/case-studies/">工程案例</a>
+          <a href="/zh-hk/guides/">自動門指南</a>
+          <a class="active" href="/zh-hk/contact/">聯絡我們</a>
+        </nav>
+        <div class="language-switch" aria-label="語言選擇"><a class="language active" href="/zh-hk/contact/" title="繁體中文">繁</a><a class="language" href="/en-gb/contact/" title="English">EN</a></div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-shade">
+        <div class="shell hero-grid">
+          <div>
+            <p class="eyebrow">HONG KONG AUTOMATIC DOOR SUPPORT</p>
+            <h1>拍一張現場相片，先了解應該維修還是更換。</h1>
+            <p>不用先準備完整圖紙或零件型號。無論新裝、翻新、保養或維修，直接傳送門口、門機或配件相片即可。</p>
+          </div>
+          <aside class="direct" aria-label="直接聯絡">
+            <small>直接致電香港技術服務部門</small>
+            <a href="tel:+85262813185">+852 6281 3185</a>
+            <p>周一至五：上午 8 時至晚上 8 時<br />周六至日：上午 9 時至晚上 7 時</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <main class="shell">
+      <div class="intro">
+        <div><p class="eyebrow" style="color:var(--hl-red)">WHATSAPP ENQUIRY</p><h2>簡單整理現場情況，<br />再用 WhatsApp 發給我們。</h2></div>
+        <p>填寫以下幾項後，網站只會整理訊息並開啟 WhatsApp；內容由你確認後才發送，也可以再直接補傳現場相片。</p>
+      </div>
+      <div class="layout">
+        <section class="form-wrap" aria-labelledby="form-title">
+          <h3 id="form-title" style="margin:0 0 8px;font-size:25px">用 WhatsApp 快速查詢</h3>
+          <p class="form-note">選擇服務類型並簡單描述現場；帶有 * 的項目會整理到 WhatsApp 訊息中。</p>
+          <form id="whatsapp-form">
+            <div class="field-grid">
+              <div class="full"><label>你需要哪一項服務？ *</label><div class="service-options">
+                <label><input type="radio" name="service" value="新裝自動門" checked /><span>新裝自動門</span></label>
+                <label><input type="radio" name="service" value="翻新／更換工程" /><span>翻新／更換工程</span></label>
+                <label><input type="radio" name="service" value="定期保養" /><span>定期保養</span></label>
+                <label><input type="radio" name="service" value="故障／緊急維修" /><span>故障／緊急維修</span></label>
+              </div></div>
+              <div><label for="place">地區／項目位置 *</label><input id="place" name="place" required placeholder="例如：九龍灣商場入口" /></div>
+              <div><label for="name">聯絡人稱呼</label><input id="name" name="name" placeholder="例如：陳先生／李小姐" /></div>
+              <div class="full"><label for="issue">現場情況或需要 *</label><textarea id="issue" name="issue" required placeholder="例如：門無法開啟、感應失靈、需要安排新裝評估。"></textarea></div>
+            </div>
+            <p class="privacy">點擊按鈕後會開啟 WhatsApp，以上內容只會作為你主動發送的查詢訊息。建議同時傳送門口、門機或問題位置的相片，方便初步判斷。</p>
+            <div class="submit">
+              <button type="submit">用 WhatsApp 發出查詢</button>
+              <a class="call" href="tel:+85262813185">或立即致電</a>
+            </div>
+          </form>
+        </section>
+        <aside class="sidebar">
+          <section class="panel pre"><h3>傳相前可準備</h3><ul><li>門口及整體現場相片</li><li>問題位置近照，例如感應器、門機或地鉸</li><li>大約地區與方便聯絡時間</li></ul></section>
+          <section class="panel"><h3>不方便使用 WhatsApp？</h3><p>可直接致電，或發送電郵並附上現場相片。我們會按實際情況安排下一步跟進。</p></section>
+        </aside>
+      </div>
+      <section class="departments" aria-label="其他聯絡部門">
+        <article class="department">
+          <h3>香港技術服務部門</h3>
+          <dl>
+            <dt>地址</dt><dd>大利樓<br />大角咀，九龍，香港</dd>
+            <dt>電話</dt><dd><a href="tel:+85262813185">+852 6281 3185</a></dd>
+            <dt>電郵</dt><dd><a href="mailto:sales.hk@hwalai.com">sales.hk@hwalai.com</a></dd>
+            <dt>營業時間</dt><dd>周一至五，上午 8 時至晚上 8 時<br />周六至日，上午 9 時至晚上 7 時</dd>
+          </dl>
+        </article>
+        <article class="department">
+          <h3>內地倉儲物流部門</h3>
+          <dl>
+            <dt>地址</dt><dd>38 號鋪，逸仙路<br />前山街道，香洲區，珠海市</dd>
+            <dt>電話</dt><dd><a href="tel:+8613527277171">+86 135 2727 7171</a></dd>
+            <dt>電郵</dt><dd><a href="mailto:sales.hk@hwalai.com">sales.hk@hwalai.com</a></dd>
+            <dt>營業時間</dt><dd>周一至日，上午 9 時至晚上 7 時</dd>
+          </dl>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="shell footer-grid"><div><a class="brand" href="/zh-hk/"><span class="brand-mark"><img src="https://hwalai.com/HL%20LOGO.png" alt="華麗工程" /></span><span>華麗工程</span></a><p>香港自動門設計、安裝、保養與故障支援。</p></div><div class="footer-links"><div><small>服務</small><a href="/zh-hk/portfolio/">自動門規劃</a><a href="/zh-hk/portfolio/">安裝與調試</a><a href="/zh-hk/portfolio/">定期保養</a></div><div><small>聯絡</small><a href="tel:+85262813185">+852 6281 3185</a><a href="mailto:sales.hk@hwalai.com">sales.hk@hwalai.com</a><a href="/zh-hk/contact/">聯絡我們</a></div></div></div><div class="shell footer-bottom">版權所有 2026 華麗工程 ｜ 私隱政策 / 使用條款</div><div class="footer-tags"><div class="shell"><span>Automatic Doors</span><span>Maintenance</span><span>Access Control</span></div></div></footer>
+    <script>
+      document.getElementById('whatsapp-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        const message = [
+          '你好，想查詢華麗工程服務。',
+          '',
+          '服務類型：' + data.get('service'),
+          '地區／項目位置：' + data.get('place'),
+          '聯絡人：' + (data.get('name') || '未提供'),
+          '現場情況：' + data.get('issue'),
+          '',
+          '我會再補傳現場相片，謝謝。'
+        ].join('\n');
+        window.location.href = 'https://wa.me/85262813185?text=' + encodeURIComponent(message);
+      });
+    </script>
+  </body>
+</html>

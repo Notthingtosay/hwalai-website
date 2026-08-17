@@ -1,0 +1,17 @@
+.DS_Store
+.env
+content-engine/.env
+content-engine/node_modules/
+content-engine/.publish-manifest.json
+content-engine/.last-generated.json
+npm-debug.log*
+
+# Local QA output and deployment archives are not production source.
+audit-*/
+copy-audit-*/
+qa-*.png
+design-qa*.png
+design-qa.md
+*.zip
+hwalai-oss-update-*/
+OSS上传说明-*.md

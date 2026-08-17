@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-HK">
+  <head>
+    <script>!function(){var l=window.location,h=l.hostname;if((l.protocol==="http:"&&h!=="127.0.0.1"&&h!=="localhost")||h==="www.hwalai.com"){l.replace("https://hwalai.com"+l.pathname+l.search+l.hash)}}();</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自動門即時預算及選配 | 華麗工程</title>
+    <meta name="description" content="選擇完整自動門套餐，或按工程範圍、尺寸、門機、門體材料及配件自由選配，即時查看參考預算。" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="icon" type="image/png" href="/HL LOGO.png" />
+    <link rel="canonical" href="https://hwalai.com/zh-hk/estimator/" />
+    <link rel="alternate" hreflang="zh-hk" href="https://hwalai.com/zh-hk/estimator/" />
+    <link rel="alternate" hreflang="en-gb" href="https://hwalai.com/en-gb/estimator/" />
+    <link rel="stylesheet" href="/estimator-assets/estimator.css?v=apple-type-1" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="/zh-hk/" aria-label="華麗工程首頁">
+          <img src="/HL LOGO.png" alt="" />
+          <span><strong>華麗工程</strong><small>HWA LAI ENGINEERING</small></span>
+        </a>
+        <nav class="nav-links" aria-label="主選單">
+          <a href="/zh-hk/portfolio/">產品與服務</a>
+          <a href="/zh-hk/about/">公司簡介</a>
+          <a href="/zh-hk/case-studies/">工程案例</a>
+          <a href="/zh-hk/guides/">自動門指南</a>
+          <a class="active" href="/zh-hk/estimator/">即時預算</a>
+          <a href="/zh-hk/contact/">聯絡我們</a>
+        </nav>
+        <div class="language-switch" aria-label="語言選擇">
+          <a class="active" href="/zh-hk/estimator/" aria-current="page">繁</a>
+          <a href="/en-gb/estimator/">EN</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="estimator-main">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="context-line">
+          <span>您的需要：商業入口 · 一般人流</span>
+          <small>只用於推薦配置，不會直接計價</small>
+        </div>
+        <p id="step-eyebrow" class="eyebrow">自動門預算配置器</p>
+        <h1 id="page-title">您想怎樣獲得預算？</h1>
+        <p id="page-description" class="intro-copy">選擇完整套餐快速查看價格，或逐項建立符合現場需要的配置。</p>
+        <nav id="step-nav" class="step-nav" aria-label="估價步驟"></nav>
+      </section>
+
+      <section class="builder" aria-label="自動門配置器">
+        <div class="builder-grid">
+          <section class="config-column" aria-labelledby="config-title">
+            <header class="config-head">
+              <div>
+                <small id="config-kicker">開始報價</small>
+                <h2 id="config-title">選擇估價方式</h2>
+                <p id="config-description">兩種方式都會提供清晰的參考價格，不需要先致電查詢。</p>
+              </div>
+              <button id="reset-builder" class="reset-button" type="button">重新開始</button>
+            </header>
+
+            <div id="panel" class="panel" aria-live="polite"></div>
+
+            <div class="panel-actions">
+              <button id="previous-step" class="secondary-button" type="button">上一步</button>
+              <button id="next-step" class="primary-button" type="button">下一步：門洞尺寸</button>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="pricing-note" aria-label="估價說明">
+        <p><strong>這是本公司直接供應的香港參考預算，不是鎖定報價。</strong> 門機以實際供應價加香港基本人工計算，完整工程再加入玻璃、門框及現場施工成本；完成選配後，把門口相片及大約尺寸發給我們確認即可。</p>
+      </section>
+
+      <div class="purchase-bar" aria-label="目前配置及預算">
+        <div class="purchase-selection"><small>目前選擇</small><strong id="purchase-selection">尚未選擇估價方式</strong></div>
+        <div class="purchase-price"><small>參考預算</small><strong id="purchase-price" aria-live="polite">—</strong></div>
+        <button id="purchase-summary" type="button">查看配置摘要</button>
+        <a id="whatsapp-link" href="#" target="_blank" rel="noopener">WhatsApp 查詢</a>
+      </div>
+    </main>
+
+    <div class="mobile-purchase" aria-label="手機版參考預算">
+      <div><small>參考預算</small><strong id="mobile-price">—</strong></div>
+      <button id="mobile-next" type="button">下一步</button>
+    </div>
+
+    <script src="/estimator-assets/estimator.js?v=brand-price-2" defer></script>
+  </body>
+</html>

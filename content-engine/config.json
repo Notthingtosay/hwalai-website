@@ -1,0 +1,38 @@
+{
+  "siteNameZh": "華麗工程",
+  "siteNameEn": "Hwa Lai Engineering",
+  "baseUrl": "https://hwalai.com",
+  "phone": "+852 6281 3185",
+  "whatsapp": "85262813185",
+  "model": "gpt-5.6",
+  "dailyArticleCount": 1,
+  "minimumChineseCharacters": 1200,
+  "minimumEnglishWords": 850,
+  "minimumSections": 5,
+  "minimumFaqs": 3,
+  "maximumTitleCharacters": 62,
+  "maximumDescriptionCharacters": 155,
+  "priceContentEnabled": false,
+  "bannedPhrases": [
+    "保證第一名",
+    "百分百安全",
+    "零風險",
+    "全港最低價",
+    "guaranteed number one",
+    "100% safe",
+    "zero risk",
+    "lowest price in Hong Kong"
+  ],
+  "priceTerms": [
+    "價錢",
+    "價格",
+    "費用",
+    "報價",
+    "港幣",
+    "HK$",
+    "cost",
+    "price",
+    "pricing",
+    "quote"
+  ]
+}

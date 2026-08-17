@@ -1,0 +1,170 @@
+[
+  {
+    "path": "/guide-assets/images/automatic-door-selection/framed-shopfront.webp",
+    "width": 1080,
+    "height": 698,
+    "tags": ["shopfront", "framed-door", "glass", "installation", "selection", "entrance"],
+    "altZh": "香港商舖金屬門框雙向玻璃自動門入口",
+    "altEn": "Framed bi-parting glass automatic entrance at a Hong Kong shop"
+  },
+  {
+    "path": "/guide-assets/images/automatic-door-selection/operator-and-rail.webp",
+    "width": 900,
+    "height": 1100,
+    "tags": ["operator", "rail", "components", "maintenance", "repair", "installation"],
+    "altZh": "玻璃自動門頂部門機路軌、吊輪及控制組件",
+    "altEn": "Automatic glass door operator rail, hangers and control components"
+  },
+  {
+    "path": "/guide-assets/images/automatic-door-selection/frosted-sliding-door.webp",
+    "width": 1000,
+    "height": 1064,
+    "tags": ["frosted-glass", "framed-door", "privacy", "office", "glass", "selection"],
+    "altZh": "黑色金屬門框配磨砂玻璃平移自動門",
+    "altEn": "Black metal framed automatic sliding door with frosted glass panels"
+  },
+  {
+    "path": "/case-media/auto-glass-system.webp",
+    "width": 921,
+    "height": 2048,
+    "tags": ["operator", "glass", "components", "maintenance", "repair"],
+    "altZh": "玻璃自動門系統及頂部門機組件",
+    "altEn": "Glass automatic door system and overhead operator components"
+  },
+  {
+    "path": "/case-media/auto-residential-white.webp",
+    "width": 1080,
+    "height": 946,
+    "tags": ["residential", "white-frame", "entrance", "safety", "selection"],
+    "altZh": "白色金屬門框住宅自動門入口",
+    "altEn": "Residential automatic entrance with white metal framing"
+  },
+  {
+    "path": "/case-media/auto-hennessy-entry.webp",
+    "width": 1512,
+    "height": 2016,
+    "tags": ["commercial", "entrance", "glass", "installation", "maintenance"],
+    "altZh": "香港商業大廈玻璃入口門工程",
+    "altEn": "Glass entrance installation at a Hong Kong commercial building"
+  },
+  {
+    "path": "/case-media/auto-gold-lobby.webp",
+    "width": 1080,
+    "height": 698,
+    "tags": ["lobby", "framed-door", "commercial", "entrance", "selection"],
+    "altZh": "金色金屬門框大堂玻璃自動門",
+    "altEn": "Lobby glass automatic door with gold-tone metal framing"
+  },
+  {
+    "path": "/case-media/auto-touch-demo-poster.webp",
+    "width": 478,
+    "height": 850,
+    "tags": ["access-control", "touchless", "sensor", "safety", "controls"],
+    "altZh": "自動門非接觸式出門感應按鈕測試",
+    "altEn": "Touchless exit sensor test for an automatic door"
+  },
+  {
+    "path": "/case-media/auto-art-glass.webp",
+    "width": 810,
+    "height": 1080,
+    "tags": ["art-glass", "glass", "privacy", "interior", "selection"],
+    "altZh": "藝術圖案玻璃門及金屬門框工程",
+    "altEn": "Decorative art-glass door with metal framing"
+  },
+  {
+    "path": "/case-media/auto-glass-door.webp",
+    "width": 1080,
+    "height": 1440,
+    "tags": ["glass", "entrance", "shopfront", "installation", "selection"],
+    "altZh": "通透玻璃門入口及金屬門框工程",
+    "altEn": "Clear glass entrance door with metal framing"
+  },
+  {
+    "path": "/case-media/auto-storefront-gold.webp",
+    "width": 920,
+    "height": 2048,
+    "tags": ["shopfront", "commercial", "gold-frame", "glass", "entrance"],
+    "altZh": "金色金屬框商舖玻璃門面工程",
+    "altEn": "Commercial glass shopfront with gold-tone framing"
+  },
+  {
+    "path": "/case-media/auto-arcade-swing-demo-poster.webp",
+    "width": 540,
+    "height": 960,
+    "tags": ["swing-door", "entrance", "testing", "maintenance", "commercial"],
+    "altZh": "商業入口自動平開門現場測試",
+    "altEn": "On-site test of an automatic swing entrance"
+  },
+  {
+    "path": "/case-media/auto-lobby-demo-poster.webp",
+    "width": 540,
+    "height": 960,
+    "tags": ["lobby", "automatic-door", "testing", "sensor", "entrance"],
+    "altZh": "大堂玻璃自動門運行測試",
+    "altEn": "Operating test of a lobby glass automatic door"
+  },
+  {
+    "path": "/case-media/auto-office-demo-poster.webp",
+    "width": 540,
+    "height": 960,
+    "tags": ["office", "automatic-door", "testing", "sensor", "access-control"],
+    "altZh": "辦公區玻璃自動門開關測試",
+    "altEn": "Opening and closing test of an office glass automatic door"
+  },
+  {
+    "path": "/case-media/glass-shower-clear.webp",
+    "width": 1279,
+    "height": 1706,
+    "tags": ["shower", "glass", "frameless", "bathroom", "installation"],
+    "altZh": "浴室無框透明玻璃淋浴間工程",
+    "altEn": "Frameless clear-glass shower enclosure installation"
+  },
+  {
+    "path": "/case-media/glass-shower-dark.webp",
+    "width": 1279,
+    "height": 1706,
+    "tags": ["shower", "tinted-glass", "privacy", "bathroom", "installation"],
+    "altZh": "浴室深色玻璃淋浴間及金屬五金",
+    "altEn": "Dark-tinted glass shower enclosure with metal hardware"
+  },
+  {
+    "path": "/case-media/glass-shower-front.webp",
+    "width": 1279,
+    "height": 1706,
+    "tags": ["shower", "glass", "hinge", "bathroom", "installation"],
+    "altZh": "正面玻璃淋浴門及鉸鏈五金工程",
+    "altEn": "Front glass shower door with hinge hardware"
+  },
+  {
+    "path": "/case-media/stair-rail-glass.webp",
+    "width": 1279,
+    "height": 1706,
+    "tags": ["stair", "railing", "glass", "stainless-steel", "installation"],
+    "altZh": "玻璃樓梯扶手及不鏽鋼欄杆工程",
+    "altEn": "Glass stair balustrade with stainless-steel handrail"
+  },
+  {
+    "path": "/case-media/stair-rail-home.webp",
+    "width": 1279,
+    "height": 1706,
+    "tags": ["stair", "railing", "residential", "stainless-steel", "installation"],
+    "altZh": "住宅不鏽鋼樓梯扶手工程",
+    "altEn": "Residential stainless-steel stair handrail installation"
+  },
+  {
+    "path": "/case-media/waterfront-rail-finished.webp",
+    "width": 1279,
+    "height": 1706,
+    "tags": ["waterfront", "railing", "stainless-steel", "outdoor", "finished"],
+    "altZh": "海濱戶外不鏽鋼欄杆完成效果",
+    "altEn": "Completed outdoor stainless-steel waterfront railing"
+  },
+  {
+    "path": "/case-media/waterfront-rail-install.webp",
+    "width": 1279,
+    "height": 1706,
+    "tags": ["waterfront", "railing", "stainless-steel", "outdoor", "installation"],
+    "altZh": "海濱戶外不鏽鋼欄杆安裝過程",
+    "altEn": "Installation of an outdoor stainless-steel waterfront railing"
+  }
+]

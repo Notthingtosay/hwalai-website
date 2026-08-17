@@ -1,0 +1,67 @@
+name: Publish daily automatic-door guide
+
+on:
+  schedule:
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "Number of bilingual topics to publish"
+        required: false
+        default: "1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hwalai-daily-guide
+  cancel-in-progress: false
+
+jobs:
+  generate-validate-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: content-engine/package-lock.json
+
+      - name: Install publisher dependency
+        working-directory: content-engine
+        run: npm ci
+
+      - name: Generate and machine-check article
+        working-directory: content-engine
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.6' }}
+        run: node scripts/run.mjs --count "${{ inputs.count || '1' }}"
+
+      - name: Validate all guide pages
+        working-directory: content-engine
+        run: node scripts/validate-site.mjs
+
+      - name: Publish validated files to Alibaba Cloud OSS
+        working-directory: content-engine
+        env:
+          ALIBABA_CLOUD_ACCESS_KEY_ID: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_ID }}
+          ALIBABA_CLOUD_ACCESS_KEY_SECRET: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET }}
+          OSS_REGION: oss-cn-hongkong
+          OSS_BUCKET: hwalai
+          OSS_SECURE: "true"
+        run: node scripts/publish.mjs
+
+      - name: Save published article in repository
+        run: |
+          git config user.name "Hwa Lai Content Bot"
+          git config user.email "content-bot@hwalai.com"
+          git add zh-hk/guides en-gb/guides guide-assets/guides.css sitemap.xml content-engine/data
+          git diff --cached --quiet && exit 0
+          git commit -m "content: publish daily automatic-door guide"
+          git push

@@ -1,0 +1,15 @@
+{
+  "name": "hwalai-content-engine",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/run.mjs --count 1",
+    "demo": "node scripts/run.mjs --count 1 --mock --dry-run",
+    "validate": "node scripts/validate-site.mjs",
+    "publish": "node scripts/publish.mjs"
+  },
+  "dependencies": {
+    "ali-oss": "6.23.0"
+  }
+}

@@ -124,6 +124,9 @@ export async function generateWithOpenAI({ topic, photos, config, knowledge }) {
     "Return JSON only through the supplied schema. Write one useful Traditional Chinese article and one natural British English adaptation.",
     "Do not use HTML in any field. Do not invent projects, customers, addresses, certifications, law numbers, performance figures or prices.",
     "Use Hong Kong Traditional Chinese vocabulary. Be practical, calm and specific. Avoid generic AI phrasing and excessive marketing language.",
+    "Write for a real person making a decision or diagnosing a problem, not for rankings or keyword variations. Never stuff keywords.",
+    "Every article must add topic-specific value: observable signs, safe checks, decision points, useful photos to provide, and clear limits on remote diagnosis.",
+    "Do not pad the article, recycle stock paragraphs, or paraphrase an existing article. If the approved material cannot support a useful distinct answer, do not invent details.",
     "Each language must contain at least 5 sections and 3 FAQs. Each section should normally have 2 substantial paragraphs.",
     "Keep each title within 60 characters and each meta description within 150 characters, including spaces and punctuation.",
     "End with a low-pressure WhatsApp photo enquiry. Do not mention cost, price, quote or fees.",
@@ -398,12 +401,37 @@ export async function validateArticle({ article, topic, photos, config, publishe
     const text = [copy.intro, ...copy.sections.flatMap((section) => section.paragraphs), ...copy.faqs.map((faq) => faq.answer)].join(" ");
     if (locale === "zh" && text.replace(/\s/g, "").length < config.minimumChineseCharacters) errors.push(`zh: 正文字数不足 ${config.minimumChineseCharacters}`);
     if (locale === "en" && text.split(/\s+/).length < config.minimumEnglishWords) errors.push(`en: 正文词数不足 ${config.minimumEnglishWords}`);
+    const blocks = articleProseBlocks(copy, locale);
+    for (let left = 0; left < blocks.length; left += 1) {
+      for (let right = left + 1; right < blocks.length; right += 1) {
+        if (proseSimilarity(blocks[left], blocks[right], locale) > config.maximumParagraphSimilarity) {
+          errors.push(`${locale}: 正文内有过于相似的重复段落`);
+        }
+      }
+    }
   }
   if (published.some((item) => item.slug === topic.slug)) errors.push(`slug 已发布：${topic.slug}`);
   if (published.some((item) => item.titleZh === article.zh.title || item.titleEn === article.en.title)) errors.push("标题与已发布文章重复");
   for (const item of published) {
     if (titleSimilarity(item.titleZh, article.zh.title) > 0.82 || titleSimilarity(item.titleEn, article.en.title) > 0.82) {
       errors.push(`标题与已发布主题过于相似：${item.slug}`);
+    }
+    for (const [locale, copy] of Object.entries(article)) {
+      const priorFile = path.resolve(root, `${locale === "zh" ? "zh-hk" : "en-gb"}/guides/${item.slug}/index.html`);
+      try {
+        const priorHtml = await fs.readFile(priorFile, "utf8");
+        const priorBlocks = [...priorHtml.matchAll(/<p(?:\s[^>]*)?>([\s\S]*?)<\/p>/gi)]
+          .map((match) => stripTags(match[1]))
+          .filter((block) => isSubstantialBlock(block, locale));
+        for (const block of articleProseBlocks(copy, locale)) {
+          if (priorBlocks.some((prior) => proseSimilarity(block, prior, locale) > config.maximumParagraphSimilarity)) {
+            errors.push(`${locale}: 正文段落与已发布文章过于相似：${item.slug}`);
+            break;
+          }
+        }
+      } catch (error) {
+        if (error.code !== "ENOENT") throw error;
+      }
     }
   }
   for (const photo of photos) {
@@ -425,6 +453,39 @@ function titleSimilarity(a = "", b = "") {
   };
   const left = grams(a);
   const right = grams(b);
+  const intersection = [...left].filter((value) => right.has(value)).length;
+  const union = new Set([...left, ...right]).size;
+  return union ? intersection / union : 0;
+}
+
+function isSubstantialBlock(value = "", locale) {
+  const clean = stripTags(value);
+  return locale === "zh"
+    ? clean.replace(/\s/g, "").length >= 70
+    : clean.split(/\s+/).filter(Boolean).length >= 35;
+}
+
+function articleProseBlocks(copy, locale) {
+  return [
+    copy?.intro,
+    ...(copy?.sections || []).flatMap((section) => section.paragraphs || []),
+    ...(copy?.faqs || []).map((faq) => faq.answer)
+  ].filter((block) => isSubstantialBlock(block, locale));
+}
+
+function proseSimilarity(a = "", b = "", locale) {
+  const normalize = (value) => stripTags(value).toLowerCase().replace(/[^\p{L}\p{N}\s]+/gu, " ").replace(/\s+/g, " ").trim();
+  const ngrams = (value) => {
+    const clean = normalize(value);
+    if (locale === "zh") {
+      const chars = clean.replace(/\s/g, "");
+      return new Set(Array.from({ length: Math.max(0, chars.length - 2) }, (_, index) => chars.slice(index, index + 3)));
+    }
+    const words = clean.split(" ").filter(Boolean);
+    return new Set(Array.from({ length: Math.max(0, words.length - 2) }, (_, index) => words.slice(index, index + 3).join(" ")));
+  };
+  const left = ngrams(a);
+  const right = ngrams(b);
   const intersection = [...left].filter((value) => right.has(value)).length;
   const union = new Set([...left, ...right]).size;
   return union ? intersection / union : 0;

@@ -7,7 +7,10 @@ for (const name of ["ALIBABA_CLOUD_ACCESS_KEY_ID", "ALIBABA_CLOUD_ACCESS_KEY_SEC
   if (!process.env[name]) throw new Error(`缺少环境变量 ${name}`);
 }
 
-const manifest = JSON.parse(await fs.readFile(path.join(engineRoot, ".publish-manifest.json"), "utf8"));
+const manifestPath = process.env.PUBLISH_MANIFEST
+  ? path.resolve(engineRoot, process.env.PUBLISH_MANIFEST)
+  : path.join(engineRoot, ".publish-manifest.json");
+const manifest = JSON.parse(await fs.readFile(manifestPath, "utf8"));
 if (!Array.isArray(manifest.files) || !manifest.files.length) throw new Error("发布清单为空。");
 
 const client = new OSS({

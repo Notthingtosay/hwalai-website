@@ -10,6 +10,7 @@
   "minimumEnglishWords": 850,
   "minimumSections": 5,
   "minimumFaqs": 3,
+  "maximumParagraphSimilarity": 0.78,
   "maximumTitleCharacters": 62,
   "maximumDescriptionCharacters": 155,
   "priceContentEnabled": false,

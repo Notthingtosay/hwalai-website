@@ -68,3 +68,10 @@ node scripts/run.mjs --count 1 --publish
 ## 發布檔案
 
 生成器每次只把 `.publish-manifest.json` 列出的頁面、圖片、文章中心和 sitemap 上傳，不會整站覆蓋，避免誤刪原有內容。
+
+## Google 内容安全原则
+
+- AI 只用于整理已核准的工程知识与文章结构，不用于批量制造关键词变体页。
+- 每篇文章必须解决一个真实而不同的客户问题，并通过长度、事实、禁写词、标题相似度及段落重复度检查。
+- 如资料不足以提供新价值，生成或质检应失败，不应为了发布数量补写空泛内容。
+- Google 所称 `Manual Actions` 是 Search Console 的人工处置报告，不是 SEO 插件。应定期查看 [Manual Actions report](https://support.google.com/webmasters/answer/9044175)，并遵守 [Google 关于生成式 AI 内容的官方指引](https://developers.google.com/search/docs/fundamentals/using-gen-ai-content) 与 [Scaled content abuse 政策](https://developers.google.com/search/docs/essentials/spam-policies#scaled-content)。

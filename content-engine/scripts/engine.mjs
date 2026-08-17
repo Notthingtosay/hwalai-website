@@ -167,6 +167,8 @@ async function generateWithCodexCli({ system, user, config, apiBaseUrl }) {
   const prompt = [
     system,
     "Do not inspect files, run shell commands or call tools. Produce the final JSON immediately.",
+    `The English prose across intro, section paragraphs and FAQ answers MUST exceed ${config.minimumEnglishWords} words; target at least ${config.minimumEnglishWords + 150} words.`,
+    `The Traditional Chinese prose across the same fields MUST exceed ${config.minimumChineseCharacters} non-space characters; target at least ${config.minimumChineseCharacters + 300} characters.`,
     `Article brief: ${user}`
   ].join("\n\n");
 
@@ -195,33 +197,56 @@ async function generateWithCodexCli({ system, user, config, apiBaseUrl }) {
     );
     await fs.writeFile(schemaFile, `${JSON.stringify(articleSchema, null, 2)}\n`, { mode: 0o600 });
 
-    const result = await runProcess(codexExecutable, [
-      "exec",
-      "--ephemeral",
-      "--skip-git-repo-check",
-      "--sandbox", "read-only",
-      "--output-schema", schemaFile,
-      "--output-last-message", outputFile,
-      "--color", "never",
-      "-"
-    ], {
-      cwd: temporaryHome,
-      env: { ...process.env, CODEX_HOME: temporaryHome, NO_COLOR: "1" },
-      input: prompt
-    });
-    if (result.code !== 0) {
-      const safeError = `${result.stderr}\n${result.stdout}`
-        .replaceAll(process.env.OPENAI_API_KEY, "***")
-        .trim()
-        .slice(-5000);
-      throw new Error(`Codex CLI 生成失败（exit ${result.code}）：${safeError}`);
+    for (let attempt = 1; attempt <= 2; attempt += 1) {
+      const retryInstruction = attempt === 1
+        ? ""
+        : "\n\nThe previous draft was too short. Rewrite the complete article with fuller, non-repetitive technical explanations and comfortably exceed both minimum lengths.";
+      const result = await runProcess(codexExecutable, [
+        "exec",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox", "read-only",
+        "--output-schema", schemaFile,
+        "--output-last-message", outputFile,
+        "--color", "never",
+        "-"
+      ], {
+        cwd: temporaryHome,
+        env: { ...process.env, CODEX_HOME: temporaryHome, NO_COLOR: "1" },
+        input: `${prompt}${retryInstruction}`
+      });
+      if (result.code !== 0) {
+        const safeError = `${result.stderr}\n${result.stdout}`
+          .replaceAll(process.env.OPENAI_API_KEY, "***")
+          .trim()
+          .slice(-5000);
+        throw new Error(`Codex CLI 生成失败（exit ${result.code}）：${safeError}`);
+      }
+      const outputText = (await fs.readFile(outputFile, "utf8")).trim();
+      if (!outputText) throw new Error("Codex CLI 没有返回文章正文。");
+      const article = JSON.parse(outputText);
+      const lengths = articleProseLengths(article);
+      if (
+        lengths.zh >= config.minimumChineseCharacters
+        && lengths.en >= config.minimumEnglishWords
+      ) return article;
+      if (attempt === 2) return article;
     }
-    const outputText = (await fs.readFile(outputFile, "utf8")).trim();
-    if (!outputText) throw new Error("Codex CLI 没有返回文章正文。");
-    return JSON.parse(outputText);
   } finally {
     await fs.rm(temporaryHome, { recursive: true, force: true });
   }
+}
+
+function articleProseLengths(article) {
+  const prose = (copy) => [
+    copy?.intro,
+    ...(copy?.sections || []).flatMap((section) => section.paragraphs || []),
+    ...(copy?.faqs || []).map((faq) => faq.answer)
+  ].filter(Boolean).join(" ");
+  return {
+    zh: prose(article.zh).replace(/\s/g, "").length,
+    en: prose(article.en).trim().split(/\s+/).filter(Boolean).length
+  };
 }
 
 function runProcess(command, args, { cwd, env, input }) {

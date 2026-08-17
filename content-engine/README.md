@@ -11,6 +11,7 @@
 - 不得虛構客戶、地址、認證、法例、性能數據或工程案例。
 - 圖片只從 `data/photo-library.json` 的批准圖片庫選取。
 - HTML 和 sitemap 使用不緩存策略；圖片使用長期緩存。
+- 每次生成前先寫入固定的 `automation-health/write-check.txt`，確認 OSS 權限，避免權限錯誤時仍消耗 AI 額度。
 
 ## 本機測試
 

@@ -36,6 +36,16 @@ jobs:
         working-directory: content-engine
         run: npm ci
 
+      - name: Check Alibaba Cloud OSS write access
+        working-directory: content-engine
+        env:
+          ALIBABA_CLOUD_ACCESS_KEY_ID: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_ID }}
+          ALIBABA_CLOUD_ACCESS_KEY_SECRET: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET }}
+          OSS_REGION: oss-cn-hongkong
+          OSS_BUCKET: hwalai
+          OSS_SECURE: "true"
+        run: node scripts/check-oss.mjs
+
       - name: Generate and machine-check article
         working-directory: content-engine
         env:

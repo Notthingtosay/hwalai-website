@@ -7,6 +7,7 @@
     "generate": "node scripts/run.mjs --count 1",
     "demo": "node scripts/run.mjs --count 1 --mock --dry-run",
     "validate": "node scripts/validate-site.mjs",
+    "check:oss": "node scripts/check-oss.mjs",
     "publish": "node scripts/publish.mjs"
   },
   "dependencies": {

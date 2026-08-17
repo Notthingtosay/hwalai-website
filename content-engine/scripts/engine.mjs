@@ -140,9 +140,11 @@ export async function generateWithOpenAI({ topic, photos, config, knowledge }) {
       }
     }
   });
+  const apiBaseUrl = (process.env.OPENAI_BASE_URL || "https://api.openai.com/v1")
+    .replace(/\/+$/, "");
   let response;
   for (let attempt = 1; attempt <= 3; attempt += 1) {
-    response = await fetch("https://api.openai.com/v1/responses", {
+    response = await fetch(`${apiBaseUrl}/responses`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
@@ -155,7 +157,7 @@ export async function generateWithOpenAI({ topic, photos, config, knowledge }) {
   }
   const payload = await response.json();
   if (!response.ok) {
-    throw new Error(`OpenAI API ${response.status}: ${payload?.error?.message || JSON.stringify(payload)}`);
+    throw new Error(`AI API ${response.status}: ${payload?.error?.message || JSON.stringify(payload)}`);
   }
   if (payload.status !== "completed") {
     throw new Error(`文章生成未完成：${payload.status || "unknown"}`);
@@ -167,7 +169,7 @@ export async function generateWithOpenAI({ topic, photos, config, knowledge }) {
   const outputText = payload.output_text || payload.output
     ?.flatMap((item) => item.content || [])
     .find((item) => item.type === "output_text")?.text;
-  if (!outputText) throw new Error("OpenAI API 没有返回文章正文。");
+  if (!outputText) throw new Error("AI API 没有返回文章正文。");
   return JSON.parse(outputText);
 }
 

@@ -24,7 +24,9 @@ npm run validate
 `npm run demo` 使用模擬文章，只測試生成和質檢，不會修改網站。要真正生成下一個選題：
 
 ```bash
-OPENAI_API_KEY=... npm run generate
+OPENAI_API_KEY=... \
+OPENAI_BASE_URL=https://api.openai.com/v1 \
+npm run generate
 ```
 
 要生成並直接上傳 OSS：
@@ -45,6 +47,9 @@ node scripts/run.mjs --count 1 --publish
    - `OPENAI_API_KEY`
    - `ALIBABA_CLOUD_ACCESS_KEY_ID`
    - `ALIBABA_CLOUD_ACCESS_KEY_SECRET`
+   並在 Variables 加入：
+   - `OPENAI_BASE_URL`（OpenAI 官方使用 `https://api.openai.com/v1`；中轉站填其 OpenAI 相容端點）
+   - `OPENAI_MODEL`（必須是該端點及令牌分組可用的模型）
 3. 建議為 OSS 建立只可讀寫 `hwalai` bucket 的 RAM 子帳戶，不要使用主帳戶 AccessKey。
 4. 到 Actions 手動執行一次 `Publish daily automatic-door guide`。
 5. 成功後，排程會每天自動運行。

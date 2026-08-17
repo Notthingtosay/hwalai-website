@@ -101,6 +101,17 @@ function languageSchema() {
   };
 }
 
+function truncateMetadata(value, maximumLength) {
+  const clean = String(value || "").replace(/\s+/g, " ").trim();
+  if (clean.length <= maximumLength) return clean;
+  const clipped = clean.slice(0, maximumLength - 1);
+  const wordBoundary = clipped.lastIndexOf(" ");
+  const shortened = wordBoundary >= Math.floor(maximumLength * 0.65)
+    ? clipped.slice(0, wordBoundary)
+    : clipped;
+  return `${shortened.replace(/[,:;，、；：\s]+$/u, "")}…`;
+}
+
 export async function generateWithOpenAI({ topic, photos, config, knowledge }) {
   if (!process.env.OPENAI_API_KEY) {
     throw new Error("缺少 OPENAI_API_KEY。可使用 --mock 检查流程，或在环境变量中配置密钥。");
@@ -112,6 +123,7 @@ export async function generateWithOpenAI({ topic, photos, config, knowledge }) {
     "Do not use HTML in any field. Do not invent projects, customers, addresses, certifications, law numbers, performance figures or prices.",
     "Use Hong Kong Traditional Chinese vocabulary. Be practical, calm and specific. Avoid generic AI phrasing and excessive marketing language.",
     "Each language must contain at least 5 sections and 3 FAQs. Each section should normally have 2 substantial paragraphs.",
+    "Keep each title within 60 characters and each meta description within 150 characters, including spaces and punctuation.",
     "End with a low-pressure WhatsApp photo enquiry. Do not mention cost, price, quote or fees.",
     `Editorial policy: ${knowledge.editorialPolicy.join(" | ")}`,
     `Approved engineering facts: ${knowledge.approvedFacts.join(" | ")}`
@@ -170,7 +182,11 @@ export async function generateWithOpenAI({ topic, photos, config, knowledge }) {
     ?.flatMap((item) => item.content || [])
     .find((item) => item.type === "output_text")?.text;
   if (!outputText) throw new Error("AI API 没有返回文章正文。");
-  return JSON.parse(outputText);
+  const article = JSON.parse(outputText);
+  for (const copy of Object.values(article)) {
+    copy.metaDescription = truncateMetadata(copy.metaDescription, config.maximumDescriptionCharacters);
+  }
+  return article;
 }
 
 export function generateMockArticle(topic) {

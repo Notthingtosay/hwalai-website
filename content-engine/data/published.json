@@ -20,5 +20,16 @@
     "descriptionZh": "自動門不停開關或關門後重開？了解感應器、門禁、路軌與門扇阻力的實用檢查方法，並知道何時應安排維修。",
     "descriptionEn": "Practical checks for an automatic door that keeps opening or reopening, including sensors, access control, tracks and useful photos for diagnosis.",
     "heroImage": "/guide-assets/images/automatic-door-selection/operator-and-rail.webp"
+  },
+  {
+    "slug": "automatic-door-not-opening",
+    "publishedAt": "2026-08-18",
+    "categoryZh": "故障判斷",
+    "categoryEn": "Troubleshooting",
+    "titleZh": "自動門沒有反應？先檢查這六個位置",
+    "titleEn": "Automatic door not opening? Six checks to make first",
+    "descriptionZh": "自動門沒有反應？了解六項安全檢查，包括感應器、門禁、路軌及適合傳送的維修相片。",
+    "descriptionEn": "Six safe checks for an automatic door that will not open, including sensors, access control, tracks and useful repair photos.",
+    "heroImage": "/guide-assets/images/automatic-door-selection/operator-and-rail.webp"
   }
 ]

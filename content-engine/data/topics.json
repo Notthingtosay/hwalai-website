@@ -26,7 +26,8 @@
       "operator",
       "controls"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-08-18"
   },
   {
     "slug": "automatic-door-closing-too-fast",

@@ -41,7 +41,8 @@
       "sensor",
       "operator"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-08-19"
   },
   {
     "slug": "automatic-door-making-noise",

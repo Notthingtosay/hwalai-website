@@ -31,5 +31,16 @@
     "descriptionZh": "自動門沒有反應？了解六項安全檢查，包括感應器、門禁、路軌及適合傳送的維修相片。",
     "descriptionEn": "Six safe checks for an automatic door that will not open, including sensors, access control, tracks and useful repair photos.",
     "heroImage": "/guide-assets/images/automatic-door-selection/operator-and-rail.webp"
+  },
+  {
+    "slug": "automatic-door-closing-too-fast",
+    "publishedAt": "2026-08-19",
+    "categoryZh": "故障判斷",
+    "categoryEn": "Troubleshooting",
+    "titleZh": "自動門關得太快怎麼辦？安全檢查重點",
+    "titleEn": "Automatic door closing too fast: safety checks",
+    "descriptionZh": "自動門關得太快？了解安全觀察、感應器分工、相片短片準備及何時需要到場檢查。",
+    "descriptionEn": "Fast-closing automatic door? Learn safe checks, useful photos and when to arrange an on-site inspection in Hong Kong.",
+    "heroImage": "/case-media/auto-touch-demo-poster.webp"
   }
 ]

@@ -42,5 +42,16 @@
     "descriptionZh": "自動門關得太快？了解安全觀察、感應器分工、相片短片準備及何時需要到場檢查。",
     "descriptionEn": "Fast-closing automatic door? Learn safe checks, useful photos and when to arrange an on-site inspection in Hong Kong.",
     "heroImage": "/case-media/auto-touch-demo-poster.webp"
+  },
+  {
+    "slug": "automatic-door-making-noise",
+    "publishedAt": "2026-08-20",
+    "categoryZh": "故障判斷",
+    "categoryEn": "Troubleshooting",
+    "titleZh": "自動門有異常聲音，哪些情況要盡快檢查？",
+    "titleEn": "Noisy automatic door: when should it be inspected?",
+    "descriptionZh": "自動門出現磨擦、撞擊或異常聲音時的安全檢查、警號及相片短片準備方法。",
+    "descriptionEn": "A practical guide to unusual automatic-door noises, safe checks, warning signs and the photos needed for an initial assessment.",
+    "heroImage": "/guide-assets/images/automatic-door-selection/operator-and-rail.webp"
   }
 ]

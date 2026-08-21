@@ -53,5 +53,16 @@
     "descriptionZh": "自動門出現磨擦、撞擊或異常聲音時的安全檢查、警號及相片短片準備方法。",
     "descriptionEn": "A practical guide to unusual automatic-door noises, safe checks, warning signs and the photos needed for an initial assessment.",
     "heroImage": "/guide-assets/images/automatic-door-selection/operator-and-rail.webp"
+  },
+  {
+    "slug": "automatic-door-sensor-troubleshooting",
+    "publishedAt": "2026-08-21",
+    "categoryZh": "感應與安全",
+    "categoryEn": "Sensors & safety",
+    "titleZh": "自動門感應器失靈？現場檢查方法",
+    "titleEn": "Automatic door sensor problems: site checks",
+    "descriptionZh": "自動門感應器失靈的實用排查：辨認症狀、進行安全目視檢查、準備相片短片，並了解何時要到場維修。",
+    "descriptionEn": "Practical checks for automatic door sensor faults: recognise symptoms, inspect safely, collect useful photos and know when a site visit is needed.",
+    "heroImage": "/case-media/auto-touch-demo-poster.webp"
   }
 ]

@@ -71,7 +71,8 @@
       "safety",
       "controls"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-08-21"
   },
   {
     "slug": "automatic-door-power-failure",

@@ -64,5 +64,16 @@
     "descriptionZh": "自動門感應器失靈的實用排查：辨認症狀、進行安全目視檢查、準備相片短片，並了解何時要到場維修。",
     "descriptionEn": "Practical checks for automatic door sensor faults: recognise symptoms, inspect safely, collect useful photos and know when a site visit is needed.",
     "heroImage": "/case-media/auto-touch-demo-poster.webp"
+  },
+  {
+    "slug": "automatic-door-power-failure",
+    "publishedAt": "2026-08-22",
+    "categoryZh": "電源與門禁",
+    "categoryEn": "Power & access",
+    "titleZh": "停電時自動門應該怎樣運作？",
+    "titleEn": "How should an automatic door operate during a power failure?",
+    "descriptionZh": "了解自動門停電時的安全運作、門禁放行、感應器、後備電源、員工檢查及相片遙距判斷限制。",
+    "descriptionEn": "Learn how automatic doors should behave during power failure, including release logic, sensors, batteries, staff checks and limits of photo diagnosis.",
+    "heroImage": "/case-media/auto-touch-demo-poster.webp"
   }
 ]

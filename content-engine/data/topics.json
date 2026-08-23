@@ -101,7 +101,8 @@
       "controls",
       "safety"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-08-23"
   },
   {
     "slug": "automatic-door-access-control",

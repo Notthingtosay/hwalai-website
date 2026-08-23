@@ -75,5 +75,16 @@
     "descriptionZh": "了解自動門停電時的安全運作、門禁放行、感應器、後備電源、員工檢查及相片遙距判斷限制。",
     "descriptionEn": "Learn how automatic doors should behave during power failure, including release logic, sensors, batteries, staff checks and limits of photo diagnosis.",
     "heroImage": "/case-media/auto-touch-demo-poster.webp"
+  },
+  {
+    "slug": "automatic-door-backup-battery",
+    "publishedAt": "2026-08-23",
+    "categoryZh": "電源與門禁",
+    "categoryEn": "Power & access",
+    "titleZh": "自動門需要後備電源嗎？選擇前要知道的事",
+    "titleEn": "Does an automatic door need backup power?",
+    "descriptionZh": "了解自動門何時應考慮後備電源、選擇前要檢查的入口安排，以及初步查詢可提供哪些相片。",
+    "descriptionEn": "Understand when an automatic door may need backup power, what to check before choosing it, and which entrance photos help an initial review.",
+    "heroImage": "/case-media/auto-touch-demo-poster.webp"
   }
 ]

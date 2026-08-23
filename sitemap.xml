@@ -239,4 +239,18 @@
     <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-power-failure/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-power-failure/" />
   </url>
+  <url>
+    <loc>https://hwalai.com/zh-hk/guides/automatic-door-backup-battery/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-backup-battery/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/automatic-door-backup-battery/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-backup-battery/" />
+  </url>
+  <url>
+    <loc>https://hwalai.com/en-gb/guides/automatic-door-backup-battery/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/automatic-door-backup-battery/" />
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-backup-battery/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-backup-battery/" />
+  </url>
 </urlset>

@@ -116,7 +116,8 @@
       "controls",
       "entrance"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-08-24"
   },
   {
     "slug": "automatic-door-safety-sensors",

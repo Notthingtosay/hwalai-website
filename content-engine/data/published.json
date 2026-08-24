@@ -86,5 +86,16 @@
     "descriptionZh": "了解自動門何時應考慮後備電源、選擇前要檢查的入口安排，以及初步查詢可提供哪些相片。",
     "descriptionEn": "Understand when an automatic door may need backup power, what to check before choosing it, and which entrance photos help an initial review.",
     "heroImage": "/case-media/auto-touch-demo-poster.webp"
+  },
+  {
+    "slug": "automatic-door-access-control",
+    "publishedAt": "2026-08-24",
+    "categoryZh": "電源與門禁",
+    "categoryEn": "Power & access",
+    "titleZh": "自動門怎樣連接拍卡、密碼及手機門禁？",
+    "titleEn": "Connecting Automatic Doors to Card, Keypad and Mobile Access",
+    "descriptionZh": "了解自動門如何連接拍卡、密碼及手機門禁：由入口流程、安全感應、停電安排到提供相片作初步判斷。",
+    "descriptionEn": "Practical guidance for linking an automatic door to card, keypad or mobile access in Hong Kong premises, including safety checks and site information.",
+    "heroImage": "/case-media/auto-touch-demo-poster.webp"
   }
 ]

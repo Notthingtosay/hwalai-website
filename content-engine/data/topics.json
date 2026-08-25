@@ -131,7 +131,8 @@
       "safety",
       "entrance"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-08-25"
   },
   {
     "slug": "automatic-door-for-elderly-users",

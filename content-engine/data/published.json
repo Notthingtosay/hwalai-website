@@ -97,5 +97,16 @@
     "descriptionZh": "了解自動門如何連接拍卡、密碼及手機門禁：由入口流程、安全感應、停電安排到提供相片作初步判斷。",
     "descriptionEn": "Practical guidance for linking an automatic door to card, keypad or mobile access in Hong Kong premises, including safety checks and site information.",
     "heroImage": "/case-media/auto-touch-demo-poster.webp"
+  },
+  {
+    "slug": "automatic-door-safety-sensors",
+    "publishedAt": "2026-08-25",
+    "categoryZh": "感應與安全",
+    "categoryEn": "Sensors & safety",
+    "titleZh": "自動門防夾感應器與開門感應器有甚麼分別？",
+    "titleEn": "Activation and anti-trap sensors: what is the difference?",
+    "descriptionZh": "了解自動門開門感應器與防夾感應器的分別、可觀察徵兆、安全檢查、相片準備及遙距判斷限制。",
+    "descriptionEn": "Learn the difference between automatic-door activation and anti-trap sensors, what signs to observe, safe checks, and what photos help a technician.",
+    "heroImage": "/case-media/auto-residential-white.webp"
   }
 ]

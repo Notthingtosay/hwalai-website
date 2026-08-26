@@ -281,4 +281,18 @@
     <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-safety-sensors/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-safety-sensors/" />
   </url>
+  <url>
+    <loc>https://hwalai.com/zh-hk/guides/automatic-door-for-elderly-users/</loc>
+    <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-for-elderly-users/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/automatic-door-for-elderly-users/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-for-elderly-users/" />
+  </url>
+  <url>
+    <loc>https://hwalai.com/en-gb/guides/automatic-door-for-elderly-users/</loc>
+    <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/automatic-door-for-elderly-users/" />
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-for-elderly-users/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-for-elderly-users/" />
+  </url>
 </urlset>

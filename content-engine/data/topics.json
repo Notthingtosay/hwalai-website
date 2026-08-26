@@ -146,7 +146,8 @@
       "residential",
       "entrance"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-08-26"
   },
   {
     "slug": "automatic-door-for-clinics",

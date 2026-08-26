@@ -108,5 +108,16 @@
     "descriptionZh": "了解自動門開門感應器與防夾感應器的分別、可觀察徵兆、安全檢查、相片準備及遙距判斷限制。",
     "descriptionEn": "Learn the difference between automatic-door activation and anti-trap sensors, what signs to observe, safe checks, and what photos help a technician.",
     "heroImage": "/case-media/auto-residential-white.webp"
+  },
+  {
+    "slug": "automatic-door-for-elderly-users",
+    "publishedAt": "2026-08-26",
+    "categoryZh": "場景選擇",
+    "categoryEn": "Use cases",
+    "titleZh": "長者及無障礙入口的自動門要留意甚麼？",
+    "titleEn": "Automatic doors for older and mobility-impaired users",
+    "descriptionZh": "為長者及行動不便人士選自動門的實用指南，涵蓋感應器、淨空、玻璃、停電邏輯及保養檢查。",
+    "descriptionEn": "A practical guide to choosing automatic doors for older and mobility-impaired users, covering sensors, clearance, glass, power and checks.",
+    "heroImage": "/case-media/auto-residential-white.webp"
   }
 ]

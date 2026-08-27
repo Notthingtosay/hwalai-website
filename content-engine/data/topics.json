@@ -161,7 +161,8 @@
       "privacy",
       "safety"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-08-27"
   },
   {
     "slug": "automatic-door-for-restaurants",

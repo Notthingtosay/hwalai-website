@@ -119,5 +119,16 @@
     "descriptionZh": "為長者及行動不便人士選自動門的實用指南，涵蓋感應器、淨空、玻璃、停電邏輯及保養檢查。",
     "descriptionEn": "A practical guide to choosing automatic doors for older and mobility-impaired users, covering sensors, clearance, glass, power and checks.",
     "heroImage": "/case-media/auto-residential-white.webp"
+  },
+  {
+    "slug": "automatic-door-for-clinics",
+    "publishedAt": "2026-08-27",
+    "categoryZh": "場景選擇",
+    "categoryEn": "Use cases",
+    "titleZh": "診所自動門怎樣兼顧衞生、私隱與安全？",
+    "titleEn": "Choosing an automatic door for a clinic",
+    "descriptionZh": "診所選自動門實用指南：由感應器、磨砂玻璃、門禁及停電安排，逐步檢查衞生、私隱與安全。",
+    "descriptionEn": "How to select a clinic automatic door for hygiene, privacy and safety, with practical checks for sensors, glass, access control and power.",
+    "heroImage": "/guide-assets/images/automatic-door-selection/frosted-sliding-door.webp"
   }
 ]

@@ -130,5 +130,16 @@
     "descriptionZh": "診所選自動門實用指南：由感應器、磨砂玻璃、門禁及停電安排，逐步檢查衞生、私隱與安全。",
     "descriptionEn": "How to select a clinic automatic door for hygiene, privacy and safety, with practical checks for sensors, glass, access control and power.",
     "heroImage": "/guide-assets/images/automatic-door-selection/frosted-sliding-door.webp"
+  },
+  {
+    "slug": "automatic-door-for-restaurants",
+    "publishedAt": "2026-08-28",
+    "categoryZh": "場景選擇",
+    "categoryEn": "Use cases",
+    "titleZh": "餐廳入口自動門怎樣選？人流、冷氣與氣味控制",
+    "titleEn": "Choosing an automatic door for a restaurant entrance",
+    "descriptionZh": "餐廳入口自動門怎樣選？從人流、冷氣、氣味、玻璃門、感應器及日常保養作實際判斷。",
+    "descriptionEn": "A practical guide to selecting a restaurant automatic door around diner flow, cooling, odours, sensors and existing glass doors.",
+    "heroImage": "/guide-assets/images/automatic-door-selection/framed-shopfront.webp"
   }
 ]

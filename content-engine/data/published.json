@@ -141,5 +141,16 @@
     "descriptionZh": "餐廳入口自動門怎樣選？從人流、冷氣、氣味、玻璃門、感應器及日常保養作實際判斷。",
     "descriptionEn": "A practical guide to selecting a restaurant automatic door around diner flow, cooling, odours, sensors and existing glass doors.",
     "heroImage": "/guide-assets/images/automatic-door-selection/framed-shopfront.webp"
+  },
+  {
+    "slug": "automatic-door-for-offices",
+    "publishedAt": "2026-08-29",
+    "categoryZh": "場景選擇",
+    "categoryEn": "Use cases",
+    "titleZh": "辦公室自動門如何配合門禁與訪客動線？",
+    "titleEn": "Planning an Office Automatic Door with Access Control",
+    "descriptionZh": "了解辦公室自動門如何配合接待處、門禁、訪客動線、安全感應及停電安排，並掌握安裝前實用檢查。",
+    "descriptionEn": "Plan an office automatic door around reception, access control, visitor flow, safe sensing and practical checks before installation.",
+    "heroImage": "/guide-assets/images/automatic-door-selection/frosted-sliding-door.webp"
   }
 ]

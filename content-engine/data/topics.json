@@ -191,7 +191,8 @@
       "access-control",
       "frosted-glass"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-08-29"
   },
   {
     "slug": "automatic-door-for-retail",

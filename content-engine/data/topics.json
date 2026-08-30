@@ -206,7 +206,8 @@
       "glass",
       "entrance"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-08-30"
   },
   {
     "slug": "sliding-vs-swing-automatic-door",

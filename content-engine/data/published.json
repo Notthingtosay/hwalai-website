@@ -152,5 +152,16 @@
     "descriptionZh": "了解辦公室自動門如何配合接待處、門禁、訪客動線、安全感應及停電安排，並掌握安裝前實用檢查。",
     "descriptionEn": "Plan an office automatic door around reception, access control, visitor flow, safe sensing and practical checks before installation.",
     "heroImage": "/guide-assets/images/automatic-door-selection/frosted-sliding-door.webp"
+  },
+  {
+    "slug": "automatic-door-for-retail",
+    "publishedAt": "2026-08-30",
+    "categoryZh": "場景選擇",
+    "categoryEn": "Use cases",
+    "titleZh": "零售商舖自動門：外觀與日常使用的平衡",
+    "titleEn": "Retail automatic doors: appearance and daily use",
+    "descriptionZh": "選擇零售商舖自動門的實用指南：兼顧玻璃門面、顧客走線、安全感應、貨物進出及日常保養。",
+    "descriptionEn": "Practical guidance for choosing a retail automatic door that balances a clear shopfront, customer flow, safety sensing and daily operation.",
+    "heroImage": "/guide-assets/images/automatic-door-selection/framed-shopfront.webp"
   }
 ]

@@ -337,4 +337,18 @@
     <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-for-offices/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-for-offices/" />
   </url>
+  <url>
+    <loc>https://hwalai.com/zh-hk/guides/automatic-door-for-retail/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-for-retail/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/automatic-door-for-retail/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-for-retail/" />
+  </url>
+  <url>
+    <loc>https://hwalai.com/en-gb/guides/automatic-door-for-retail/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/automatic-door-for-retail/" />
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-for-retail/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-for-retail/" />
+  </url>
 </urlset>

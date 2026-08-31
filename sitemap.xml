@@ -351,4 +351,18 @@
     <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-for-retail/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-for-retail/" />
   </url>
+  <url>
+    <loc>https://hwalai.com/zh-hk/guides/sliding-vs-swing-automatic-door/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/sliding-vs-swing-automatic-door/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/sliding-vs-swing-automatic-door/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/sliding-vs-swing-automatic-door/" />
+  </url>
+  <url>
+    <loc>https://hwalai.com/en-gb/guides/sliding-vs-swing-automatic-door/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/sliding-vs-swing-automatic-door/" />
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/sliding-vs-swing-automatic-door/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/sliding-vs-swing-automatic-door/" />
+  </url>
 </urlset>

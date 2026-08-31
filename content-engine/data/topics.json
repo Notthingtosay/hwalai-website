@@ -221,7 +221,8 @@
       "selection",
       "glass"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-08-31"
   },
   {
     "slug": "telescopic-automatic-door-guide",

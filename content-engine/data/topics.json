@@ -236,7 +236,8 @@
       "glass",
       "selection"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-09-01"
   },
   {
     "slug": "retrofit-existing-glass-door",

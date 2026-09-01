@@ -365,4 +365,18 @@
     <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/sliding-vs-swing-automatic-door/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/sliding-vs-swing-automatic-door/" />
   </url>
+  <url>
+    <loc>https://hwalai.com/zh-hk/guides/telescopic-automatic-door-guide/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/telescopic-automatic-door-guide/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/telescopic-automatic-door-guide/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/telescopic-automatic-door-guide/" />
+  </url>
+  <url>
+    <loc>https://hwalai.com/en-gb/guides/telescopic-automatic-door-guide/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/telescopic-automatic-door-guide/" />
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/telescopic-automatic-door-guide/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/telescopic-automatic-door-guide/" />
+  </url>
 </urlset>

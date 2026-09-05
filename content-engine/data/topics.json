@@ -251,7 +251,8 @@
       "installation",
       "operator"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-09-05"
   },
   {
     "slug": "automatic-door-site-survey",

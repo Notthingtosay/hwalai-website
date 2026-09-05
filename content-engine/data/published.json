@@ -185,5 +185,16 @@
     "descriptionZh": "門洞不夠闊時，如何判斷重疊式自動門是否合適：淨通道、兩側空間、玻璃、感應及相片檢查重點。",
     "descriptionEn": "How to assess a telescopic automatic door for a narrow entrance: opening width, run-back space, glass, safety sensing and photos to provide.",
     "heroImage": "/guide-assets/images/automatic-door-selection/framed-shopfront.webp"
+  },
+  {
+    "slug": "retrofit-existing-glass-door",
+    "publishedAt": "2026-09-05",
+    "categoryZh": "選購與安裝",
+    "categoryEn": "Selection & installation",
+    "titleZh": "現有玻璃門可以改裝成自動門嗎？",
+    "titleEn": "現有玻璃門改裝自動門：先檢查甚麼",
+    "descriptionZh": "了解現有玻璃門改裝自動門前要檢查的門扇、承重、路軌、感應器、門禁及停電安排。",
+    "descriptionEn": "Learn how to assess an existing glass door for automatic conversion, including structure, operator space, sensors, access control and power-cut behaviour.",
+    "heroImage": "/guide-assets/images/automatic-door-selection/framed-shopfront.webp"
   }
 ]

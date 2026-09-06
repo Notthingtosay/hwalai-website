@@ -393,4 +393,18 @@
     <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/retrofit-existing-glass-door/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/retrofit-existing-glass-door/" />
   </url>
+  <url>
+    <loc>https://hwalai.com/zh-hk/guides/automatic-door-site-survey/</loc>
+    <lastmod>2026-09-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-site-survey/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/automatic-door-site-survey/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-site-survey/" />
+  </url>
+  <url>
+    <loc>https://hwalai.com/en-gb/guides/automatic-door-site-survey/</loc>
+    <lastmod>2026-09-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/automatic-door-site-survey/" />
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-site-survey/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-site-survey/" />
+  </url>
 </urlset>

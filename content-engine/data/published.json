@@ -196,5 +196,16 @@
     "descriptionZh": "了解現有玻璃門改裝自動門前要檢查的門扇、承重、路軌、感應器、門禁及停電安排。",
     "descriptionEn": "Learn how to assess an existing glass door for automatic conversion, including structure, operator space, sensors, access control and power-cut behaviour.",
     "heroImage": "/guide-assets/images/automatic-door-selection/framed-shopfront.webp"
+  },
+  {
+    "slug": "automatic-door-site-survey",
+    "publishedAt": "2026-09-06",
+    "categoryZh": "選購與安裝",
+    "categoryEn": "Selection & installation",
+    "titleZh": "安裝自動門前，現場勘察會檢查甚麼？",
+    "titleEn": "What is checked during an automatic door site survey?",
+    "descriptionZh": "了解自動門現場勘察項目：門扇、玻璃、感應器、電源、門禁、維修空間及相片準備，並認清遙距判斷限制。",
+    "descriptionEn": "Learn what an automatic-door site survey checks, what photos help, and which safety, glass, power and access decisions need on-site confirmation.",
+    "heroImage": "/guide-assets/images/automatic-door-selection/framed-shopfront.webp"
   }
 ]

@@ -266,7 +266,8 @@
       "entrance",
       "operator"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-09-06"
   },
   {
     "slug": "automatic-door-power-requirements",

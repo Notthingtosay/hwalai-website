@@ -281,7 +281,8 @@
       "installation",
       "operator"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-09-07"
   },
   {
     "slug": "frameless-vs-framed-glass-door",

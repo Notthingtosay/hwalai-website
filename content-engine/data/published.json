@@ -218,5 +218,16 @@
     "descriptionZh": "自動門安裝前要怎樣預留電源和走線？了解門機、感應器、門禁及停電通行的實際規劃重點。",
     "descriptionEn": "Plan power, cable routes, sensors and access control for an automatic door before finishes are closed. Learn what needs site confirmation.",
     "heroImage": "/guide-assets/images/automatic-door-selection/operator-and-rail.webp"
+  },
+  {
+    "slug": "frameless-vs-framed-glass-door",
+    "publishedAt": "2026-09-08",
+    "categoryZh": "玻璃與門框",
+    "categoryEn": "Glass & frames",
+    "titleZh": "無框與有框玻璃自動門，應該怎樣選？",
+    "titleEn": "Frameless or framed glass automatic door?",
+    "descriptionZh": "比較無框及有框玻璃自動門：了解支撐、五金、感應、門禁及相片初步判斷的實際重點。",
+    "descriptionEn": "A practical Hong Kong guide to choosing frameless or framed glass automatic doors, with checks for support, sensors, use and photo diagnosis.",
+    "heroImage": "/guide-assets/images/automatic-door-selection/frosted-sliding-door.webp"
   }
 ]

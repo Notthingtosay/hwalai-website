@@ -240,5 +240,16 @@
     "descriptionZh": "自動門玻璃應連同尺寸、重量、開孔、五金、門機及使用環境考慮。了解現場檢查重點與可提供的相片。",
     "descriptionEn": "Choosing glass for an automatic door means checking size, weight, fittings, openings, operator capacity and the environment—not thickness alone.",
     "heroImage": "/guide-assets/images/automatic-door-selection/framed-shopfront.webp"
+  },
+  {
+    "slug": "stainless-steel-door-frame-guide",
+    "publishedAt": "2026-09-11",
+    "categoryZh": "玻璃與門框",
+    "categoryEn": "Glass & frames",
+    "titleZh": "自動門不鏽鋼門框怎樣選？環境與收口重點",
+    "titleEn": "Choosing stainless-steel framing for an automatic door",
+    "descriptionZh": "了解自動門不鏽鋼門框的環境、玻璃五金、收口與保養判斷，附可自行檢查的重點及相片建議。",
+    "descriptionEn": "A practical guide to stainless-steel automatic-door frames: exposure, glass, finishes, safety interfaces, checks and useful photos.",
+    "heroImage": "/case-media/auto-gold-lobby.webp"
   }
 ]

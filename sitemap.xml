@@ -449,4 +449,18 @@
     <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/automatic-door-glass-selection/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/automatic-door-glass-selection/" />
   </url>
+  <url>
+    <loc>https://hwalai.com/zh-hk/guides/stainless-steel-door-frame-guide/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/stainless-steel-door-frame-guide/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/stainless-steel-door-frame-guide/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/stainless-steel-door-frame-guide/" />
+  </url>
+  <url>
+    <loc>https://hwalai.com/en-gb/guides/stainless-steel-door-frame-guide/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://hwalai.com/en-gb/guides/stainless-steel-door-frame-guide/" />
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://hwalai.com/zh-hk/guides/stainless-steel-door-frame-guide/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwalai.com/zh-hk/guides/stainless-steel-door-frame-guide/" />
+  </url>
 </urlset>

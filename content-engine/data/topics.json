@@ -326,7 +326,8 @@
       "entrance",
       "commercial"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-09-11"
   },
   {
     "slug": "frosted-glass-automatic-door",

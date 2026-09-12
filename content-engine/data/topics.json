@@ -341,7 +341,8 @@
       "privacy",
       "office"
     ],
-    "status": "queued"
+    "status": "published",
+    "publishedAt": "2026-09-12"
   },
   {
     "slug": "automatic-door-maintenance-checklist",

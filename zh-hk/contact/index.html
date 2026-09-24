@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>聯絡我們 | 華麗工程</title>
     <meta name="description" content="透過 WhatsApp 聯絡華麗工程香港團隊，查詢自動門新裝、翻新、保養及維修安排。" />
-    <link rel="icon" type="image/png" href="/HL LOGO.png" />
+    <link rel="icon" type="image/png" href="/site-assets/favicon.png" />
     <link rel="canonical" href="https://hwalai.com/zh-hk/contact/" />
     <link rel="alternate" hreflang="zh-hk" href="https://hwalai.com/zh-hk/contact/" />
     <link rel="alternate" hreflang="en-gb" href="https://hwalai.com/en-gb/contact/" />
@@ -29,6 +29,13 @@
       .language-switch { display:flex; align-items:center; background:#f3f4f6; border-radius:999px; padding:4px; }
       .language { display:inline-flex; width:3.2rem; min-height:29px; align-items:center; justify-content:center; border-radius:999px; color:#6b7280; font-size:12px; font-weight:700; }
       .language.active { background:#fff; color:var(--hl-red); box-shadow:0 1px 3px rgba(0,0,0,.12); }
+      .mobile-nav { display:none; position:relative; margin-left:auto; }
+      .mobile-nav summary { list-style:none; cursor:pointer; border:1px solid var(--line); border-radius:12px; padding:9px 12px; font-size:14px; font-weight:800; }
+      .mobile-nav summary::-webkit-details-marker { display:none; }
+      .mobile-nav nav { position:absolute; z-index:60; right:0; top:calc(100% + 10px); width:min(280px,calc(100vw - 28px)); display:grid; gap:2px; padding:10px; background:#fff; border:1px solid var(--line); border-radius:16px; box-shadow:0 18px 45px rgba(0,0,0,.15); }
+      .mobile-nav nav a { padding:12px; border-radius:9px; font-weight:700; }
+      .mobile-nav nav a:hover { background:var(--hl-red-soft); color:var(--hl-red); }
+      .nav a:focus-visible,.nav summary:focus-visible,.submit a:focus-visible,.submit button:focus-visible,.hero a:focus-visible { outline:3px solid var(--hl-red); outline-offset:3px; }
       .hero { margin-top:88px; min-height:620px; color:#fff; background:#161616 url("https://hwalai.com/autodoor.jpg") center/cover no-repeat; }
       .hero-shade { min-height:620px; display:flex; align-items:center; background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.63) 56%,rgba(0,0,0,.36)); padding:96px 0 76px; }
       .hero-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:end; }
@@ -39,6 +46,8 @@
       .direct small { display:block; margin-bottom:7px; color:#d7d7d7; font-weight:800; letter-spacing:.08em; }
       .direct a { display:block; font-size:30px; font-weight:900; letter-spacing:.01em; }
       .direct p { margin:10px 0 0; font-size:14px; color:#d7d7d7; }
+      .hero-whatsapp { display:inline-flex; align-items:center; justify-content:center; min-height:48px; margin-top:24px; padding:0 20px; border-radius:999px; background:#fff; color:var(--hl-red); font-size:14px; font-weight:800; }
+      .hero-whatsapp:hover { background:var(--hl-red-soft); }
       main { padding:80px 0; }
       .intro { display:flex; align-items:end; justify-content:space-between; gap:32px; margin-bottom:32px; }
       h2 { margin:0; font-size:clamp(32px,3vw,48px); line-height:1.14; letter-spacing:-.04em; }
@@ -94,14 +103,14 @@
       .footer-tags { background:var(--hl-black); padding:24px 0; }
       .footer-tags .shell { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:12px; }
       .footer-tags span { border:1px solid rgba(255,255,255,.2); border-radius:999px; padding:8px 15px; color:rgba(255,255,255,.8); font-size:11px; font-weight:800; letter-spacing:.14em; }
-      @media (max-width:860px) { .nav-links { display:none; } .hero-grid,.layout,.departments { grid-template-columns:1fr; } .hero-shade { min-height:570px; padding:120px 0 58px; } .intro { display:block; } .intro p { margin-top:16px; } .field-grid { grid-template-columns:1fr; } .full { grid-column:auto; } .service-options { grid-template-columns:1fr; } .footer-grid { grid-template-columns:1fr; gap:34px; } }
-      @media (max-width:520px) { .shell { width:min(100% - 28px,1280px); } .nav-inner { min-height:58px; } .brand { font-size:22px; } .brand-mark { transform:scale(.78); transform-origin:left center; margin-right:-32px; } .language { width:2.7rem; } .hero { margin-top:82px; min-height:560px; } .hero-shade { min-height:560px; } .form-wrap,.panel,.department { padding:23px; border-radius:23px; } .submit>* { width:100%; } .footer-links { grid-template-columns:1fr; } .footer-tags .shell { justify-content:center; } }
+      @media (max-width:860px) { .nav-links { display:none; } .mobile-nav { display:block; } .hero-grid,.layout,.departments { grid-template-columns:1fr; } .hero-shade { min-height:570px; padding:120px 0 58px; } .intro { display:block; } .intro p { margin-top:16px; } .field-grid { grid-template-columns:1fr; } .full { grid-column:auto; } .service-options { grid-template-columns:1fr; } .footer-grid { grid-template-columns:1fr; gap:34px; } }
+      @media (max-width:520px) { .shell { width:min(100% - 28px,1280px); } .nav-inner { min-height:58px; } .brand { font-size:22px; } .brand-mark { transform:scale(.78); transform-origin:left center; margin-right:-32px; } .language-switch { display:none; } .hero { margin-top:82px; min-height:560px; } .hero-shade { min-height:560px; } .form-wrap,.panel,.department { padding:23px; border-radius:23px; } .submit>* { width:100%; } .footer-links { grid-template-columns:1fr; } .footer-tags .shell { justify-content:center; } }
     </style>
   </head>
   <body>
     <header class="nav">
       <div class="shell nav-inner">
-        <a class="brand" href="/zh-hk/"><span class="brand-mark"><img src="https://hwalai.com/HL%20LOGO.png" alt="華麗工程" /></span><span>華麗工程</span></a>
+        <a class="brand" href="/zh-hk/"><span class="brand-mark"><img src="/site-assets/logo.webp" width="256" height="362" alt="華麗工程" /></span><span>華麗工程</span></a>
         <nav class="nav-links" aria-label="主選單">
           <a href="/zh-hk/portfolio/">產品與服務</a>
           <a href="/zh-hk/about/">公司簡介</a>
@@ -109,6 +118,7 @@
           <a href="/zh-hk/guides/">自動門指南</a>
           <a class="active" href="/zh-hk/contact/">聯絡我們</a>
         </nav>
+        <details class="mobile-nav"><summary>選單</summary><nav aria-label="手機主選單"><a href="/zh-hk/portfolio/">產品與服務</a><a href="/zh-hk/about/">公司簡介</a><a href="/zh-hk/case-studies/">工程案例</a><a href="/zh-hk/guides/">自動門指南</a><a href="/zh-hk/contact/" aria-current="page">聯絡我們</a><a href="/en-gb/contact/">English</a></nav></details>
         <div class="language-switch" aria-label="語言選擇"><a class="language active" href="/zh-hk/contact/" title="繁體中文">繁</a><a class="language" href="/en-gb/contact/" title="English">EN</a></div>
       </div>
     </header>
@@ -120,6 +130,7 @@
             <p class="eyebrow">HONG KONG AUTOMATIC DOOR SUPPORT</p>
             <h1>拍一張現場相片，先了解應該維修還是更換。</h1>
             <p>不用先準備完整圖紙或零件型號。無論新裝、翻新、保養或維修，直接傳送門口、門機或配件相片即可。</p>
+            <a class="hero-whatsapp" href="https://wa.me/85262813185" target="_blank" rel="noopener">直接用 WhatsApp 傳相片</a>
           </div>
           <aside class="direct" aria-label="直接聯絡">
             <small>直接致電香港技術服務部門</small>
@@ -133,7 +144,7 @@
     <main class="shell">
       <div class="intro">
         <div><p class="eyebrow" style="color:var(--hl-red)">WHATSAPP ENQUIRY</p><h2>簡單整理現場情況，<br />再用 WhatsApp 發給我們。</h2></div>
-        <p>填寫以下幾項後，網站只會整理訊息並開啟 WhatsApp；內容由你確認後才發送，也可以再直接補傳現場相片。</p>
+        <p>想直接傳相片，可使用上方 WhatsApp 按鈕；也可以填寫以下幾項，讓網站先整理查詢內容，由你確認後再發送。</p>
       </div>
       <div class="layout">
         <section class="form-wrap" aria-labelledby="form-title">
@@ -185,7 +196,7 @@
       </section>
     </main>
 
-    <footer class="footer"><div class="shell footer-grid"><div><a class="brand" href="/zh-hk/"><span class="brand-mark"><img src="https://hwalai.com/HL%20LOGO.png" alt="華麗工程" /></span><span>華麗工程</span></a><p>香港自動門設計、安裝、保養與故障支援。</p></div><div class="footer-links"><div><small>服務</small><a href="/zh-hk/portfolio/">自動門規劃</a><a href="/zh-hk/portfolio/">安裝與調試</a><a href="/zh-hk/portfolio/">定期保養</a></div><div><small>聯絡</small><a href="tel:+85262813185">+852 6281 3185</a><a href="mailto:sales.hk@hwalai.com">sales.hk@hwalai.com</a><a href="/zh-hk/contact/">聯絡我們</a></div></div></div><div class="shell footer-bottom">版權所有 2026 華麗工程 ｜ 私隱政策 / 使用條款</div><div class="footer-tags"><div class="shell"><span>Automatic Doors</span><span>Maintenance</span><span>Access Control</span></div></div></footer>
+    <footer class="footer"><div class="shell footer-grid"><div><a class="brand" href="/zh-hk/"><span class="brand-mark"><img src="/site-assets/logo.webp" width="256" height="362" alt="華麗工程" /></span><span>華麗工程</span></a><p>香港自動門設計、安裝、保養與故障支援。</p></div><div class="footer-links"><div><small>服務</small><a href="/zh-hk/portfolio/">自動門規劃</a><a href="/zh-hk/portfolio/">安裝與調試</a><a href="/zh-hk/portfolio/">定期保養</a></div><div><small>聯絡</small><a href="tel:+85262813185">+852 6281 3185</a><a href="mailto:sales.hk@hwalai.com">sales.hk@hwalai.com</a><a href="/zh-hk/contact/">聯絡我們</a></div></div></div><div class="shell footer-bottom">版權所有 2026 華麗工程 ｜ 私隱政策 / 使用條款</div><div class="footer-tags"><div class="shell"><span>Automatic Doors</span><span>Maintenance</span><span>Access Control</span></div></div></footer>
     <script>
       document.getElementById('whatsapp-form').addEventListener('submit', function (event) {
         event.preventDefault();

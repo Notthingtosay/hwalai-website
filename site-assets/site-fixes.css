@@ -1,0 +1,48 @@
+.hl-site-nav a:focus-visible,
+.hl-site-nav button:focus-visible {
+  outline: 3px solid #b30f1a;
+  outline-offset: 3px;
+}
+
+.hl-hero-media {
+  background: #111 url('/autodoor.jpg') center / cover no-repeat;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hl-hero-video {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hl-site-nav > div > div > a:first-child,
+  .hl-site-nav > div > div > div:nth-child(3) {
+    flex-basis: auto;
+  }
+
+  .hl-site-nav > div > div {
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hl-site-nav .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0.65rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .hl-site-nav > div > div > div:nth-child(2),
+  .hl-site-nav > div > div > div:nth-child(3) {
+    display: none !important;
+  }
+
+  .hl-site-nav > div > div > div:nth-child(4) {
+    display: flex !important;
+    margin-left: auto;
+  }
+
+  .hl-site-nav > div.md\:hidden {
+    display: block !important;
+  }
+}

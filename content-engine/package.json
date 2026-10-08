@@ -6,7 +6,8 @@
   "scripts": {
     "generate": "node scripts/run.mjs --count 1",
     "demo": "node scripts/run.mjs --count 1 --mock --dry-run",
-    "validate": "node scripts/validate-site.mjs",
+    "validate": "node scripts/validate-site.mjs && npm run test:contact-seo",
+    "test:contact-seo": "node --test scripts/contact-seo.test.mjs",
     "check:oss": "node scripts/check-oss.mjs",
     "publish": "node scripts/publish.mjs"
   },

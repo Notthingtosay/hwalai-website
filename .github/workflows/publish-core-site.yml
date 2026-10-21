@@ -1,33 +1,52 @@
-name: Install consultation tracking on current live pages
+name: Publish core website files
+
 on:
   workflow_dispatch:
+
 permissions:
   contents: read
+
 concurrency:
   group: hwalai-oss-publisher
   cancel-in-progress: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: content-engine
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
           cache-dependency-path: content-engine/package-lock.json
-      - run: npm ci --omit=dev
-        working-directory: content-engine
-      - run: node content-engine/scripts/test-consultation-tracking.mjs
-      - name: Install tracking only, preserving published content
+
+      - name: Install publisher dependency
+        run: npm ci --omit=dev
+
+      - name: Check website and article pages
+        run: npm run validate
+
+      - name: Verify OSS write access
         env:
           ALIBABA_CLOUD_ACCESS_KEY_ID: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_ID }}
           ALIBABA_CLOUD_ACCESS_KEY_SECRET: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET }}
-        run: node content-engine/scripts/publish-consultation-tracking.mjs
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: consultation-tracking-original-pages
-          path: tracking-deployment-backup/
-          retention-days: 30
+          OSS_REGION: oss-cn-hongkong
+          OSS_BUCKET: hwalai
+          OSS_SECURE: "true"
+        run: npm run check:oss
+
+      - name: Publish core site files to Alibaba Cloud OSS
+        env:
+          ALIBABA_CLOUD_ACCESS_KEY_ID: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_ID }}
+          ALIBABA_CLOUD_ACCESS_KEY_SECRET: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET }}
+          OSS_REGION: oss-cn-hongkong
+          OSS_BUCKET: hwalai
+          OSS_SECURE: "true"
+          PUBLISH_MANIFEST: data/core-site-manifest.json
+        run: npm run publish

@@ -582,6 +582,7 @@ export function renderArticlePage({ locale, copy, topic, photos, date, config })
     <script type="application/ld+json">${jsonLd(articleData)}</script>
     <script type="application/ld+json">${jsonLd(faqData)}</script>
     <script type="application/ld+json">${jsonLd(breadcrumbData)}</script>
+    <script defer src="/site-assets/consultation-tracking-20261021.js"></script>
   </head>
   <body>
     <header class="site-header"><div class="shell header-row"><a class="brand" href="/${s.dir}/" aria-label="${escapeHtml(s.brand)}"><img src="/site-assets/logo.webp" width="256" height="362" alt="${escapeHtml(s.brandAlt)}" /><span class="brand-copy"><strong>${escapeHtml(s.brand)}</strong><small>${escapeHtml(s.brandSmall)}</small></span></a><nav class="main-nav" aria-label="${escapeHtml(s.contents)}"><a href="/${s.dir}/portfolio/">${escapeHtml(s.navProducts)}</a><a href="/${s.dir}/case-studies/">${escapeHtml(s.navCases)}</a><a class="active" href="/${s.dir}/guides/">${escapeHtml(s.guides)}</a><a href="/${s.dir}/contact/">${escapeHtml(s.navContact)}</a></nav><div class="lang-switch" aria-label="Language"><a${locale === "zh" ? " class=\"active\"" : ""} href="/zh-hk/guides/${topic.slug}/">繁</a><a${locale === "en" ? " class=\"active\"" : ""} href="/en-gb/guides/${topic.slug}/">EN</a></div></div></header>

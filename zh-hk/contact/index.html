@@ -106,7 +106,7 @@
       @media (max-width:860px) { .nav-links { display:none; } .mobile-nav { display:block; } .hero-grid,.layout,.departments { grid-template-columns:1fr; } .hero-shade { min-height:570px; padding:120px 0 58px; } .intro { display:block; } .intro p { margin-top:16px; } .field-grid { grid-template-columns:1fr; } .full { grid-column:auto; } .service-options { grid-template-columns:1fr; } .footer-grid { grid-template-columns:1fr; gap:34px; } }
       @media (max-width:520px) { .shell { width:min(100% - 28px,1280px); } .nav-inner { min-height:58px; } .brand { font-size:22px; } .brand-mark { transform:scale(.78); transform-origin:left center; margin-right:-32px; } .language-switch { display:none; } .hero { margin-top:82px; min-height:560px; } .hero-shade { min-height:560px; } .form-wrap,.panel,.department { padding:23px; border-radius:23px; } .submit>* { width:100%; } .footer-links { grid-template-columns:1fr; } .footer-tags .shell { justify-content:center; } }
     </style>
-  </head>
+  <script defer src="/site-assets/consultation-tracking-20261021.js"></script></head>
   <body>
     <header class="nav">
       <div class="shell nav-inner">
@@ -211,7 +211,7 @@
           '',
           '我會再補傳現場相片，謝謝。'
         ].join('\n');
-        window.location.href = 'https://wa.me/85262813185?text=' + encodeURIComponent(message);
+        window.hwalaiContactTracking.navigateWhatsApp('https://wa.me/85262813185?text=' + encodeURIComponent(message));
       });
     </script>
   </body>

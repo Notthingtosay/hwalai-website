@@ -582,6 +582,8 @@ export function renderArticlePage({ locale, copy, topic, photos, date, config })
     <script type="application/ld+json">${jsonLd(articleData)}</script>
     <script type="application/ld+json">${jsonLd(faqData)}</script>
     <script type="application/ld+json">${jsonLd(breadcrumbData)}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18044826821"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){window.dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18044826821');gtag('config','G-XF74WHS00S');</script>
+    <link rel="stylesheet" href="/site-assets/site-fixes.css?v=20261126" />
     <script defer src="/site-assets/consultation-tracking-20261021.js"></script>
   </head>
   <body>

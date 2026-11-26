@@ -441,5 +441,65 @@
       "sensor"
     ],
     "status": "queued"
+  },
+  {
+    "slug": "floor-spring-leaking-oil-replacement",
+    "titleZh": "玻璃門地鉸漏油、下墜或關門過快？香港換地鉸前必睇",
+    "titleEn": "Glass door floor spring leaking oil or sagging? Hong Kong guide",
+    "intent": "troubleshooting",
+    "categoryZh": "地鉸與玻璃門",
+    "categoryEn": "Floor springs & glass",
+    "photoTags": [
+      "shopfront",
+      "glass",
+      "entrance"
+    ],
+    "status": "published",
+    "publishedAt": "2026-11-26"
+  },
+  {
+    "slug": "popular-automatic-door-brands-hong-kong",
+    "titleZh": "香港常見自動門品牌維修及更換：Panasonic、Dorma、GEZE、Nabco 點揀？",
+    "titleEn": "Hong Kong automatic door brands: Panasonic, Dorma, GEZE & Nabco",
+    "intent": "comparison",
+    "categoryZh": "品牌與選型",
+    "categoryEn": "Brands & selection",
+    "photoTags": [
+      "operator",
+      "commercial",
+      "installation"
+    ],
+    "status": "published",
+    "publishedAt": "2026-11-26"
+  },
+  {
+    "slug": "automatic-door-repair-vs-replacement",
+    "titleZh": "自動門壞咗應該維修定成套更換？香港現場五個判斷重點",
+    "titleEn": "Repair or replace an automatic door? Five Hong Kong site criteria",
+    "intent": "comparison",
+    "categoryZh": "故障判斷",
+    "categoryEn": "Troubleshooting",
+    "photoTags": [
+      "repair",
+      "operator",
+      "maintenance"
+    ],
+    "status": "published",
+    "publishedAt": "2026-11-26"
+  },
+  {
+    "slug": "automatic-door-cost-factors-hong-kong",
+    "titleZh": "香港自動門安裝及維修收費受咩影響？發相報價前要知道的六件事",
+    "titleEn": "What affects automatic door installation & repair costs in Hong Kong?",
+    "intent": "lead-generation",
+    "categoryZh": "報價與預算",
+    "categoryEn": "Budget & quotes",
+    "photoTags": [
+      "shopfront",
+      "installation",
+      "operator"
+    ],
+    "status": "published",
+    "publishedAt": "2026-11-26"
   }
 ]
